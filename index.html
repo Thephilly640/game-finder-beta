@@ -54,6 +54,13 @@ h1{font-style:italic;text-transform:uppercase;letter-spacing:.03em;white-space:n
 .game.past{background:var(--past);border-color:var(--past)}
 .game.past .ev,.game.past .t{color:var(--pastfg)}
 .game.past .score .w{color:var(--fg)}
+.rm{margin-top:8px;margin-right:6px;font:700 .8rem var(--body);border:1.5px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:5px 11px;cursor:pointer}
+.calrow{margin-top:8px}.calrow[hidden]{display:none}
+.calrow button{font:700 .85rem var(--body);border:1.5px solid var(--accent);color:var(--accent);background:var(--card);border-radius:999px;padding:7px 13px;cursor:pointer}
+.wel h3{margin:14px 0 4px;font:700 1rem var(--body);color:var(--fg);text-transform:none;letter-spacing:0}
+.wel p{margin:0 0 6px;font:400 .95rem/1.4 var(--body);color:var(--fg);text-transform:none;letter-spacing:0}
+.wel .go{margin-top:16px;width:100%;font:700 1rem var(--body);border:0;background:var(--accent);color:#fff;border-radius:12px;padding:12px;cursor:pointer}
+.lnk{background:none;border:0;padding:0;font:inherit;color:var(--muted);text-decoration:underline;cursor:pointer}
 .share:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 .top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
@@ -190,6 +197,7 @@ main{padding-inline:16px;padding-block:6px 40px}
       <button class="chip" id="c-f1" data-f="f1" aria-pressed="false">F1</button>
     </div>
     <div class="subrow" id="nflrow" hidden><label for="nsub">NFL</label><select id="nsub"><option value="all">All games</option><option value="fantasy">Fantasy</option></select></div>
+    <div class="calrow" id="calrow" hidden><button id="calall" type="button">🔔 Add my teams' games to my calendar</button></div>
     <div class="fbar" id="fbar" hidden><span><b>My fantasy team:</b> <span id="fcount">0 players</span></span><button id="fedit" type="button">Pick players</button></div>
     <div class="subrow" id="subrow" hidden><label for="sub">Series</label><select id="sub"><option value="cup">Cup Series</option><option value="oreilly">O'Reilly Series</option><option value="truck">Truck Series</option><option value="arca">ARCA Series</option></select></div>
   </header>
@@ -200,9 +208,21 @@ main{padding-inline:16px;padding-block:6px 40px}
       <div id="pk-c"></div>
       <div class="pk-add"><input id="pk-n" placeholder="Not listed? Player name"><select id="pk-t"></select><button id="pk-a" type="button">Add a player</button></div></div></div>
     <div class="mdl" id="mdl" hidden><div class="mdl-b" role="dialog" aria-modal="true"><div class="mdl-t"><span id="mdl-h"></span><button class="mdl-x" id="mdl-x" type="button">Close</button></div><div class="list" id="mdl-c"></div></div></div>
+    <div class="mdl wel" id="wel" hidden><div class="mdl-b" role="dialog" aria-modal="true" aria-label="How to use Game Finder">
+      <div class="mdl-t"><span>Welcome to Game Finder</span></div>
+      <h3>1. Save your teams</h3>
+      <p>Tap a team name under any game. Then tap <b>★ My teams</b> at the top to see only their games.</p>
+      <h3>2. Put it on your home screen</h3>
+      <p id="wel-ios"><b>iPhone:</b> open this page in Safari, tap the Share button, then <b>Add to Home Screen</b>.</p>
+      <p id="wel-and"><b>Android:</b> in Chrome, tap the ⋮ menu, then <b>Install app</b> (or <b>Add to home screen</b>).</p>
+      <h3>3. Get reminders</h3>
+      <p>Tap <b>🔔 Remind me</b> on a game to add it to your phone's calendar with an alert 30 minutes before. In <b>My teams</b> you can add all their games at once.</p>
+      <h3>4. Live scores</h3>
+      <p>While an NFL or college game is on, the score and clock update on their own.</p>
+      <button class="go" id="wel-x" type="button">Got it</button></div></div>
     <button class="pastbtn" id="past" hidden></button>
     <p class="foot">All times Eastern. Sunday afternoon CBS and FOX games vary by area. NFL and college show the next 30 days. College games for Oct 15–17 and Oct 22–24 aren't scheduled yet. Tap a team name under a game to save just that team to My teams. Records and rankings: <span id="asof"></span>. <span id="pasof"></span>. <span id="spasof"></span>. <span id="live"></span> NFL and college scores and game clock are live from ESPN, refreshed every 30 seconds while a game is on. Not betting advice.</p>
-    <p class="credit">Developed by: Phillip Bauman</p>
+    <p class="credit">Developed by: Phillip Bauman · <button class="lnk" id="help" type="button">How to use Game Finder</button></p>
   </main>
 </div>
 
@@ -409,6 +429,7 @@ function card(g,words,now){
       <div class="ev">${hl(g.ev,words.length===1?words[0]:"")}</div>
       ${score}${g.note?`<div class="note">${esc(g.note)}</div>`:""}
       ${g.net?`<span class="net">${esc(g.net)}</span>`:""}
+      ${!g.fin&&!inP&&!done&&!off&&g.start>now?`<div><button class="rm" data-rm="${g.i}" type="button">🔔 Remind me</button></div>`:""}
       ${!g.fin&&!inP&&!done&&SP[g.iso+"|"+g.ev]?`<div class="spr">Spread: <b>${esc(SP[g.iso+"|"+g.ev])}</b></div>`:""}
       ${chips}
       ${fantasyOn()&&g.lg==="nfl"?(()=>{const m=g.teams.flatMap(mineByTeam);return m.length?`<div class="fmine"><b>Your players:</b> ${m.map(x=>esc(x.n)+" ("+(x.p||"?")+")").join(", ")}</div>`:""})():""}</div>
@@ -440,6 +461,7 @@ function render(){
   fin.sort((x,y)=>x.start-y.start);
   $("subrow").hidden=filter!=="nascar";$("sub").value=sub;
   $("nflrow").hidden=filter!=="nfl";$("nsub").value=nsub;
+  $("calrow").hidden=!(filter==="mine"&&mine.size);
   $("fbar").hidden=!fantasyOn();$("fcount").textContent=fteam.size+" player"+(fteam.size===1?"":"s");
   const rc=filter==="nascar"||filter==="f1",unit=rc?"race":filter==="golf"?"tournament":"game";
   $("count").textContent=up.length+" "+unit+(up.length===1?"":"s");
@@ -566,6 +588,8 @@ function goUpcoming(){
 function onAct(e){
   const fb=e.target.closest(".fb");
   if(fb){openPicker([fb.dataset.fp]);return}
+  const rmb=e.target.closest(".rm");
+  if(rmb){const g=games[+rmb.dataset.rm];if(g)downloadIcs([g],"game-reminder.ics");return}
   const xp=e.target.closest(".xp");
   if(xp){const i=+xp.dataset.r;openR.has(i)?openR.delete(i):openR.add(i);render();return}
   const tb=e.target.closest(".tb");
@@ -673,6 +697,7 @@ function applyData(dj){
       res:{as,hs,ot,ar,hr},teams:[a,h],sub:"cup",hay:(ev+" "+note+" final result score "+LEAGUE[lg]).toLowerCase()});
   });
   liveStamp=dj.updated||"";
+  if(liveStamp)$("updated").textContent="Updated "+liveStamp.replace(/, \d{4}/,"");
   const el=$("live");if(el)el.textContent=liveStamp?"Scores, records and spreads auto-updated: "+liveStamp+".":"";
 }
 async function loadLive(){
@@ -704,6 +729,43 @@ document.addEventListener("visibilitychange",()=>{if(!document.hidden){loadLive(
   try{const t=localStorage.getItem("gf2_theme");if(t==="dark"||t==="light")root.dataset.theme=t}catch(e){}
   b.addEventListener("click",()=>{const n=cur()==="dark"?"light":"dark";root.dataset.theme=n;try{localStorage.setItem("gf2_theme",n)}catch(e){}paint()});
   paint();
+})();
+
+// Reminders: a calendar file (.ics) with an alert 30 minutes before kickoff. Works on iPhone and Android, no account needed.
+function icsText(t){return String(t||"").replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,").replace(/\n/g,"\\n")}
+function icsDate(d){return d.toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"")}
+function downloadIcs(gs,name){
+  const L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Game Finder//EN","CALSCALE:GREGORIAN"];
+  gs.forEach(g=>{
+    const end=g.end>g.start?g.end:new Date(g.start.getTime()+36e5*3);
+    L.push("BEGIN:VEVENT","UID:gf-"+icsDate(g.start)+"-"+g.i+"@gamefinder","DTSTAMP:"+icsDate(new Date()),"DTSTART:"+icsDate(g.start),"DTEND:"+icsDate(end),
+      "SUMMARY:"+icsText(g.ev+(g.lg==="nfl"||g.lg==="ncaa"?"":" ("+LEAGUE[g.lg]+")")),
+      "DESCRIPTION:"+icsText((g.net?"On: "+g.net+". ":"")+(g.note||"")),
+      "BEGIN:VALARM","ACTION:DISPLAY","DESCRIPTION:Starting in 30 minutes","TRIGGER:-PT30M","END:VALARM","END:VEVENT");
+  });
+  L.push("END:VCALENDAR");
+  const blob=new Blob([L.join("\r\n")],{type:"text/calendar"}),a=document.createElement("a");
+  a.href=URL.createObjectURL(blob);a.download=name||"games.ics";document.body.appendChild(a);a.click();
+  setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},2000);
+}
+$("calall").addEventListener("click",()=>{
+  const now=new Date(),end=now.getTime()+HORIZON_DAYS*864e5;
+  const gs=games.filter(g=>!g.hide&&!g.fin&&!g.golf&&g.start>now&&g.start.getTime()<end&&isMine(g)).sort((a,b)=>a.start-b.start);
+  if(!gs.length){status("None of your saved teams have an upcoming game in the next "+HORIZON_DAYS+" days.");return}
+  downloadIcs(gs,"my-teams-games.ics");status(gs.length+" game"+(gs.length===1?"":"s")+" ready. Open the file to add them to your calendar.");
+});
+
+// Welcome / how-to: shown once on first visit, and from the link at the bottom
+(function(){
+  const w=$("wel"),ua=navigator.userAgent||"",ios=/iPhone|iPad|iPod/.test(ua),and=/Android/.test(ua);
+  $("wel-ios").hidden=and&&!ios;$("wel-and").hidden=ios&&!and;
+  const standalone=(()=>{try{return matchMedia("(display-mode: standalone)").matches||navigator.standalone}catch(e){return false}})();
+  const close=()=>{w.hidden=true;try{localStorage.setItem("gf2_welcome","1")}catch(e){}};
+  $("wel-x").addEventListener("click",close);
+  w.addEventListener("click",e=>{if(e.target===w)close()});
+  $("help").addEventListener("click",()=>{w.hidden=false});
+  let seen=false;try{seen=!!localStorage.getItem("gf2_welcome")}catch(e){}
+  if(!seen&&!standalone)setTimeout(()=>{w.hidden=false},700);
 })();
 
 // Share button: native share sheet when available, otherwise copy the link
