@@ -1,1447 +1,2399 @@
 {
- "nascar-premier:202610040787": {
-  "name": "NASCAR Cup Series at Las Vegas",
-  "comp_keys": [
-   "$ref",
-   "bracketAvailable",
-   "broadcasts",
-   "commentaryAvailable",
-   "competitors",
-   "conversationAvailable",
-   "date",
-   "gameSource",
-   "guid",
-   "highlightsAvailable",
-   "id",
-   "links",
-   "liveAvailable",
-   "onWatchESPN",
-   "previewAvailable",
-   "recapAvailable",
-   "recent",
-   "statistics",
-   "status",
-   "summaryAvailable",
-   "ticketsAvailable",
-   "timeValid",
-   "uid",
-   "wallclockAvailable"
-  ],
-  "competitors_inline": true,
-  "rows": [
-   {
-    "keys": [
-     "$ref",
-     "athlete",
-     "id",
-     "order",
-     "startOrder",
-     "statistics",
-     "type",
-     "uid",
-     "vehicle",
-     "winner"
-    ],
-    "raw": {
-     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787/competitors/4773?lang=en&region=us",
-     "id": "4773",
-     "uid": "s:2000~a:4773",
-     "type": "athlete",
-     "order": 1,
-     "startOrder": 4,
-     "winner": true,
-     "vehicle": {
-      "number": "19",
-      "manufacturer": "Toyota",
-      "crewChief": "Dave Rogers",
-      "owner": "Joe Gibbs",
-      "sponsor": "Bass Pro Shops",
-      "team": "Joe Gibbs Racing"
-     }
-    },
-    "statistics": {
-     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787/competitors/4773/statistics/0?lang=en&region=us",
-     "competition": {
-      "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787?lang=en&region=us"
-     },
-     "splits": {
-      "id": "0",
-      "name": "All Splits",
-      "abbreviation": "TOT",
-      "type": "total",
-      "categories": [
-       {
-        "name": "gapToLeader",
-        "displayName": "Gap To Leader",
-        "shortDisplayName": "Gap To Leader",
-        "abbreviation": "gtl",
-        "summary": "",
-        "stats": []
-       },
-       {
-        "name": "general",
-        "displayName": "General",
-        "shortDisplayName": "General",
-        "abbreviation": "gen",
-        "summary": "",
-        "stats": [
-         {
-          "name": "lapsLead",
-          "displayName": "Laps Led",
-          "shortDisplayName": "Laps Led",
-          "description": "Total laps led in the race",
-          "abbreviation": "LL",
-          "value": 175.0,
-          "displayValue": "175"
-         },
-         {
-          "name": "lapsCompleted",
-          "displayName": "Laps Completed",
-          "shortDisplayName": "Laps Completed",
-          "description": "Total laps completed in the race",
-          "abbreviation": "LC",
-          "value": 267.0,
-          "displayValue": "267"
-         },
-         {
-          "name": "behindLaps",
-          "displayName": "Laps Behind",
-          "shortDisplayName": "Laps Behind",
-          "description": "Total laps behind the field in the race",
-          "abbreviation": "LH",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "behindTime",
-          "displayName": "Time Behind",
-          "shortDisplayName": "Time Behind",
-          "description": "Total time behind the field in the race",
-          "abbreviation": "TB",
-          "value": 0.0,
-          "displayValue": ".000"
-         },
-         {
-          "name": "championshipPts",
-          "displayName": "Championship Points",
-          "shortDisplayName": "Championship Points",
-          "description": "Championship points earned for the race",
-          "abbreviation": "CP",
-          "value": 75.0,
-          "displayValue": "75"
-         },
-         {
-          "name": "bonus",
-          "displayName": "Bonus Points",
-          "shortDisplayName": "Bonus",
-          "description": "Bonus points earned for the race",
-          "abbreviation": "B",
-          "value": 20.0,
-          "displayValue": "20"
-         },
-         {
-          "name": "penaltyPts",
-          "displayName": "Penalty Points",
-          "shortDisplayName": "Penalty Points",
-          "description": "Penalty points earned for the race",
-          "abbreviation": "PP",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "highPos",
-          "displayName": "High Position",
-          "shortDisplayName": "High Position",
-          "description": "Highest position held for the race",
-          "abbreviation": "HP",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "fastestLap",
-          "displayName": "Fastest Lap Time",
-          "shortDisplayName": "Fastest Lap Time",
-          "description": "Fastest Lap Time",
-          "abbreviation": "FLT",
-          "value": 0.0,
-          "displayValue": ".000"
-         },
-         {
-          "name": "pitsTaken",
-          "displayName": "Pits Taken",
-          "shortDisplayName": "Pits Taken",
-          "description": "Pits Taken",
-          "abbreviation": "PT",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "lastPitLap",
-          "displayName": "Last Pit Lap",
-          "shortDisplayName": "Last Pit Lap",
-          "description": "Last Pit Lap",
-          "abbreviation": "LPL",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "tookLead",
-          "displayName": "Took Lead",
-          "shortDisplayName": "Took Lead",
-          "description": "Took Lead",
-          "abbreviation": "TL",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "fastestLapNum",
-          "displayName": "Fastest Lap Number",
-          "shortDisplayName": "Fastest Lap Number",
-          "description": "Fastest Lap Number",
-          "abbreviation": "FLT",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "place",
-          "displayName": "Place",
-          "shortDisplayName": "Place",
-          "description": "Place",
-          "abbreviation": "P",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "wins",
-          "displayName": "Wins",
-          "shortDisplayName": "Wins",
-          "description": "Wins",
-          "abbreviation": "WINS",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "pole",
-          "displayName": "Pole",
-          "shortDisplayName": "Pole",
-          "description": "Pole",
-          "abbreviation": "POLE",
-          "value": 4.0,
-          "displayValue": "4"
-         },
-         {
-          "name": "top5",
-          "displayName": "Top 5",
-          "shortDisplayName": "Top 5",
-          "description": "Top 5",
-          "abbreviation": "T5",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "top10",
-          "displayName": "Top 10",
-          "shortDisplayName": "Top 10",
-          "description": "Top 10",
-          "abbreviation": "T10",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "qual1TimeMS",
-          "displayName": "Q1 Race Time",
-          "shortDisplayName": "Q1 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q1",
-          "value": 0.0,
-          "displayValue": "0.000"
-         },
-         {
-          "name": "qual2TimeMS",
-          "displayName": "Q2 Race Time",
-          "shortDisplayName": "Q2 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q2",
-          "value": 0.0,
-          "displayValue": "0.000"
-         },
-         {
-          "name": "qual3TimeMS",
-          "displayName": "Q3 Race Time",
-          "shortDisplayName": "Q3 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q3",
-          "value": 0.0,
-          "displayValue": "0.000"
-         }
-        ]
-       }
-      ]
-     }
-    }
-   },
-   {
-    "keys": [
-     "$ref",
-     "athlete",
-     "id",
-     "order",
-     "startOrder",
-     "statistics",
-     "type",
-     "uid",
-     "vehicle",
-     "winner"
-    ],
-    "raw": {
-     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787/competitors/4539?lang=en&region=us",
-     "id": "4539",
-     "uid": "s:2000~a:4539",
-     "type": "athlete",
-     "order": 2,
-     "startOrder": 6,
-     "winner": false,
-     "vehicle": {
-      "number": "5",
-      "manufacturer": "Chevrolet",
-      "sponsor": "HendrickCars.com",
-      "team": "Hendrick Motorsports"
-     }
-    },
-    "statistics": {
-     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787/competitors/4539/statistics/0?lang=en&region=us",
-     "competition": {
-      "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787?lang=en&region=us"
-     },
-     "splits": {
-      "id": "0",
-      "name": "All Splits",
-      "abbreviation": "TOT",
-      "type": "total",
-      "categories": [
-       {
-        "name": "gapToLeader",
-        "displayName": "Gap To Leader",
-        "shortDisplayName": "Gap To Leader",
-        "abbreviation": "gtl",
-        "summary": "",
-        "stats": []
-       },
-       {
-        "name": "general",
-        "displayName": "General",
-        "shortDisplayName": "General",
-        "abbreviation": "gen",
-        "summary": "",
-        "stats": [
-         {
-          "name": "lapsLead",
-          "displayName": "Laps Led",
-          "shortDisplayName": "Laps Led",
-          "description": "Total laps led in the race",
-          "abbreviation": "LL",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "lapsCompleted",
-          "displayName": "Laps Completed",
-          "shortDisplayName": "Laps Completed",
-          "description": "Total laps completed in the race",
-          "abbreviation": "LC",
-          "value": 267.0,
-          "displayValue": "267"
-         },
-         {
-          "name": "behindLaps",
-          "displayName": "Laps Behind",
-          "shortDisplayName": "Laps Behind",
-          "description": "Total laps behind the field in the race",
-          "abbreviation": "LH",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "behindTime",
-          "displayName": "Time Behind",
-          "shortDisplayName": "Time Behind",
-          "description": "Total time behind the field in the race",
-          "abbreviation": "TB",
-          "value": 0.0,
-          "displayValue": ".000"
-         },
-         {
-          "name": "championshipPts",
-          "displayName": "Championship Points",
-          "shortDisplayName": "Championship Points",
-          "description": "Championship points earned for the race",
-          "abbreviation": "CP",
-          "value": 36.0,
-          "displayValue": "36"
-         },
-         {
-          "name": "bonus",
-          "displayName": "Bonus Points",
-          "shortDisplayName": "Bonus",
-          "description": "Bonus points earned for the race",
-          "abbreviation": "B",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "penaltyPts",
-          "displayName": "Penalty Points",
-          "shortDisplayName": "Penalty Points",
-          "description": "Penalty points earned for the race",
-          "abbreviation": "PP",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "highPos",
-          "displayName": "High Position",
-          "shortDisplayName": "High Position",
-          "description": "Highest position held for the race",
-          "abbreviation": "HP",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "fastestLap",
-          "displayName": "Fastest Lap Time",
-          "shortDisplayName": "Fastest Lap Time",
-          "description": "Fastest Lap Time",
-          "abbreviation": "FLT",
-          "value": 0.0,
-          "displayValue": ".000"
-         },
-         {
-          "name": "pitsTaken",
-          "displayName": "Pits Taken",
-          "shortDisplayName": "Pits Taken",
-          "description": "Pits Taken",
-          "abbreviation": "PT",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "lastPitLap",
-          "displayName": "Last Pit Lap",
-          "shortDisplayName": "Last Pit Lap",
-          "description": "Last Pit Lap",
-          "abbreviation": "LPL",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "tookLead",
-          "displayName": "Took Lead",
-          "shortDisplayName": "Took Lead",
-          "description": "Took Lead",
-          "abbreviation": "TL",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "fastestLapNum",
-          "displayName": "Fastest Lap Number",
-          "shortDisplayName": "Fastest Lap Number",
-          "description": "Fastest Lap Number",
-          "abbreviation": "FLT",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "place",
-          "displayName": "Place",
-          "shortDisplayName": "Place",
-          "description": "Place",
-          "abbreviation": "P",
-          "value": 2.0,
-          "displayValue": "2"
-         },
-         {
-          "name": "wins",
-          "displayName": "Wins",
-          "shortDisplayName": "Wins",
-          "description": "Wins",
-          "abbreviation": "WINS",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "pole",
-          "displayName": "Pole",
-          "shortDisplayName": "Pole",
-          "description": "Pole",
-          "abbreviation": "POLE",
-          "value": 6.0,
-          "displayValue": "6"
-         },
-         {
-          "name": "top5",
-          "displayName": "Top 5",
-          "shortDisplayName": "Top 5",
-          "description": "Top 5",
-          "abbreviation": "T5",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "top10",
-          "displayName": "Top 10",
-          "shortDisplayName": "Top 10",
-          "description": "Top 10",
-          "abbreviation": "T10",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "qual1TimeMS",
-          "displayName": "Q1 Race Time",
-          "shortDisplayName": "Q1 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q1",
-          "value": 0.0,
-          "displayValue": "0.000"
-         },
-         {
-          "name": "qual2TimeMS",
-          "displayName": "Q2 Race Time",
-          "shortDisplayName": "Q2 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q2",
-          "value": 0.0,
-          "displayValue": "0.000"
-         },
-         {
-          "name": "qual3TimeMS",
-          "displayName": "Q3 Race Time",
-          "shortDisplayName": "Q3 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q3",
-          "value": 0.0,
-          "displayValue": "0.000"
-         }
-        ]
-       }
-      ]
-     }
-    }
-   },
-   {
-    "keys": [
-     "$ref",
-     "athlete",
-     "id",
-     "order",
-     "startOrder",
-     "statistics",
-     "type",
-     "uid",
-     "vehicle",
-     "winner"
-    ],
-    "raw": {
-     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787/competitors/4577?lang=en&region=us",
-     "id": "4577",
-     "uid": "s:2000~a:4577",
-     "type": "athlete",
-     "order": 3,
-     "startOrder": 5,
-     "winner": false,
-     "vehicle": {
-      "number": "45",
-      "manufacturer": "Toyota",
-      "sponsor": "Chumba Casino"
-     }
-    },
-    "statistics": {
-     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787/competitors/4577/statistics/0?lang=en&region=us",
-     "competition": {
-      "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787?lang=en&region=us"
-     },
-     "splits": {
-      "id": "0",
-      "name": "All Splits",
-      "abbreviation": "TOT",
-      "type": "total",
-      "categories": [
-       {
-        "name": "gapToLeader",
-        "displayName": "Gap To Leader",
-        "shortDisplayName": "Gap To Leader",
-        "abbreviation": "gtl",
-        "summary": "",
-        "stats": []
-       },
-       {
-        "name": "general",
-        "displayName": "General",
-        "shortDisplayName": "General",
-        "abbreviation": "gen",
-        "summary": "",
-        "stats": [
-         {
-          "name": "lapsLead",
-          "displayName": "Laps Led",
-          "shortDisplayName": "Laps Led",
-          "description": "Total laps led in the race",
-          "abbreviation": "LL",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "lapsCompleted",
-          "displayName": "Laps Completed",
-          "shortDisplayName": "Laps Completed",
-          "description": "Total laps completed in the race",
-          "abbreviation": "LC",
-          "value": 267.0,
-          "displayValue": "267"
-         },
-         {
-          "name": "behindLaps",
-          "displayName": "Laps Behind",
-          "shortDisplayName": "Laps Behind",
-          "description": "Total laps behind the field in the race",
-          "abbreviation": "LH",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "behindTime",
-          "displayName": "Time Behind",
-          "shortDisplayName": "Time Behind",
-          "description": "Total time behind the field in the race",
-          "abbreviation": "TB",
-          "value": 0.0,
-          "displayValue": ".000"
-         },
-         {
-          "name": "championshipPts",
-          "displayName": "Championship Points",
-          "shortDisplayName": "Championship Points",
-          "description": "Championship points earned for the race",
-          "abbreviation": "CP",
-          "value": 41.0,
-          "displayValue": "41"
-         },
-         {
-          "name": "bonus",
-          "displayName": "Bonus Points",
-          "shortDisplayName": "Bonus",
-          "description": "Bonus points earned for the race",
-          "abbreviation": "B",
-          "value": 7.0,
-          "displayValue": "7"
-         },
-         {
-          "name": "penaltyPts",
-          "displayName": "Penalty Points",
-          "shortDisplayName": "Penalty Points",
-          "description": "Penalty points earned for the race",
-          "abbreviation": "PP",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "highPos",
-          "displayName": "High Position",
-          "shortDisplayName": "High Position",
-          "description": "Highest position held for the race",
-          "abbreviation": "HP",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "fastestLap",
-          "displayName": "Fastest Lap Time",
-          "shortDisplayName": "Fastest Lap Time",
-          "description": "Fastest Lap Time",
-          "abbreviation": "FLT",
-          "value": 0.0,
-          "displayValue": ".000"
-         },
-         {
-          "name": "pitsTaken",
-          "displayName": "Pits Taken",
-          "shortDisplayName": "Pits Taken",
-          "description": "Pits Taken",
-          "abbreviation": "PT",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "lastPitLap",
-          "displayName": "Last Pit Lap",
-          "shortDisplayName": "Last Pit Lap",
-          "description": "Last Pit Lap",
-          "abbreviation": "LPL",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "tookLead",
-          "displayName": "Took Lead",
-          "shortDisplayName": "Took Lead",
-          "description": "Took Lead",
-          "abbreviation": "TL",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "fastestLapNum",
-          "displayName": "Fastest Lap Number",
-          "shortDisplayName": "Fastest Lap Number",
-          "description": "Fastest Lap Number",
-          "abbreviation": "FLT",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "place",
-          "displayName": "Place",
-          "shortDisplayName": "Place",
-          "description": "Place",
-          "abbreviation": "P",
-          "value": 3.0,
-          "displayValue": "3"
-         },
-         {
-          "name": "wins",
-          "displayName": "Wins",
-          "shortDisplayName": "Wins",
-          "description": "Wins",
-          "abbreviation": "WINS",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "pole",
-          "displayName": "Pole",
-          "shortDisplayName": "Pole",
-          "description": "Pole",
-          "abbreviation": "POLE",
-          "value": 5.0,
-          "displayValue": "5"
-         },
-         {
-          "name": "top5",
-          "displayName": "Top 5",
-          "shortDisplayName": "Top 5",
-          "description": "Top 5",
-          "abbreviation": "T5",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "top10",
-          "displayName": "Top 10",
-          "shortDisplayName": "Top 10",
-          "description": "Top 10",
-          "abbreviation": "T10",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "qual1TimeMS",
-          "displayName": "Q1 Race Time",
-          "shortDisplayName": "Q1 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q1",
-          "value": 0.0,
-          "displayValue": "0.000"
-         },
-         {
-          "name": "qual2TimeMS",
-          "displayName": "Q2 Race Time",
-          "shortDisplayName": "Q2 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q2",
-          "value": 0.0,
-          "displayValue": "0.000"
-         },
-         {
-          "name": "qual3TimeMS",
-          "displayName": "Q3 Race Time",
-          "shortDisplayName": "Q3 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q3",
-          "value": 0.0,
-          "displayValue": "0.000"
-         }
-        ]
-       }
-      ]
-     }
-    }
-   }
-  ]
+ "race_list_1": {
+  "n": 40
  },
- "f1:600060990": {
-  "name": "Gulf Air Bahrain Grand Prix in Malaysia",
-  "comp_keys": [
-   "$ref",
-   "bracketAvailable",
-   "broadcasts",
-   "commentaryAvailable",
-   "competitors",
-   "conversationAvailable",
-   "date",
-   "gameSource",
-   "guid",
-   "highlightsAvailable",
-   "id",
-   "liveAvailable",
-   "notes",
-   "onWatchESPN",
-   "previewAvailable",
-   "recapAvailable",
-   "recent",
-   "session",
-   "statistics",
-   "status",
-   "summaryAvailable",
-   "ticketsAvailable",
-   "timeValid",
-   "type",
-   "uid",
-   "wallclockAvailable"
-  ],
-  "competitors_inline": true,
-  "rows": [
-   {
-    "keys": [
-     "$ref",
-     "athlete",
-     "id",
-     "order",
-     "startOrder",
-     "statistics",
-     "status",
-     "type",
-     "uid",
-     "vehicle",
-     "winner"
-    ],
-    "raw": {
-     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/4665?lang=en&region=us",
-     "id": "4665",
-     "uid": "s:2000~a:4665",
-     "type": "athlete",
-     "order": 1,
-     "startOrder": 1,
-     "winner": true,
-     "vehicle": {
-      "number": "3",
-      "manufacturer": "Red Bull",
-      "teamColor": "00327D"
-     }
+ "race_list_1_sample": [
+  {
+   "race_id": 5593,
+   "series_id": 1,
+   "race_season": 2026,
+   "race_name": "Cook Out Clash at Bowman Gray",
+   "race_type_id": 2,
+   "restrictor_plate": false,
+   "track_id": 159,
+   "track_name": "Bowman Gray Stadium",
+   "date_scheduled": "2026-02-01T20:00:00",
+   "race_date": "2026-02-04T18:00:00",
+   "qualifying_date": "2026-02-04T18:00:00",
+   "tunein_date": "2026-02-04T18:00:00",
+   "scheduled_distance": 50.6,
+   "actual_distance": 50,
+   "scheduled_laps": 200,
+   "actual_laps": 200,
+   "stage_1_laps": 0,
+   "stage_2_laps": 0,
+   "stage_3_laps": 0,
+   "number_of_cars_in_field": 23,
+   "pole_winner_driver_id": 4030,
+   "pole_winner_speed": 63.663,
+   "number_of_lead_changes": 11,
+   "number_of_leaders": 7,
+   "number_of_cautions": 17,
+   "number_of_caution_laps": 17,
+   "average_speed": 21.39,
+   "total_race_time": "2:20:15",
+   "margin_of_victory": "1.752",
+   "race_purse": 0,
+   "race_comments": "Ryan Preece won the Cook Out Clash at Bowman Gray Stadium, his first victory in the preseason non-points race. No cars dropped to the rear prior to the green flag to start the race.",
+   "attendance": 0,
+   "infractions": [],
+   "schedule": [
+    {
+     "event_name": "Haulers Enter",
+     "notes": "Winston Salem Fairgrounds Event Center",
+     "start_time_utc": "2026-01-29T13:00:00",
+     "run_type": 0
     },
-    "statistics": {
-     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/4665/statistics/0?lang=en&region=us",
-     "competition": {
-      "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650?lang=en&region=us"
-     },
-     "splits": {
-      "id": "0",
-      "name": "All Splits",
-      "abbreviation": "TOT",
-      "type": "total",
-      "categories": [
-       {
-        "name": "general",
-        "displayName": "General",
-        "shortDisplayName": "General",
-        "abbreviation": "gen",
-        "summary": "",
-        "stats": [
-         {
-          "name": "lapsLead",
-          "displayName": "Laps Led",
-          "shortDisplayName": "Laps Led",
-          "description": "Total laps led in the race",
-          "abbreviation": "LL",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "lapsCompleted",
-          "displayName": "Laps Completed",
-          "shortDisplayName": "Laps Completed",
-          "description": "Total laps completed in the race",
-          "abbreviation": "LC",
-          "value": 55.0,
-          "displayValue": "55"
-         },
-         {
-          "name": "championshipPts",
-          "displayName": "Championship Points",
-          "shortDisplayName": "Championship Points",
-          "description": "Championship points earned for the race",
-          "abbreviation": "CP",
-          "value": 25.0,
-          "displayValue": "25"
-         },
-         {
-          "name": "bonus",
-          "displayName": "Bonus Points",
-          "shortDisplayName": "Bonus",
-          "description": "Bonus points earned for the race",
-          "abbreviation": "B",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "penaltyPts",
-          "displayName": "Penalty Points",
-          "shortDisplayName": "Penalty Points",
-          "description": "Penalty points earned for the race",
-          "abbreviation": "PP",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "fastestLap",
-          "displayName": "Fastest Lap Time",
-          "shortDisplayName": "Fastest Lap Time",
-          "description": "Fastest Lap Time",
-          "abbreviation": "FLT",
-          "value": 98220.0,
-          "displayValue": "1:38.220"
-         },
-         {
-          "name": "pitsTaken",
-          "displayName": "Pits Taken",
-          "shortDisplayName": "Pits Taken",
-          "description": "Pits Taken",
-          "abbreviation": "PT",
-          "value": 3.0,
-          "displayValue": "3"
-         },
-         {
-          "name": "fastestLapNum",
-          "displayName": "Fastest Lap Number",
-          "shortDisplayName": "Fastest Lap Number",
-          "description": "Fastest Lap Number",
-          "abbreviation": "FLT",
-          "value": 55.0,
-          "displayValue": "55"
-         },
-         {
-          "name": "place",
-          "displayName": "Place",
-          "shortDisplayName": "Place",
-          "description": "Place",
-          "abbreviation": "P",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "wins",
-          "displayName": "Wins",
-          "shortDisplayName": "Wins",
-          "description": "Wins",
-          "abbreviation": "WINS",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "pole",
-          "displayName": "Pole",
-          "shortDisplayName": "Pole",
-          "description": "Pole",
-          "abbreviation": "POLE",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "top5",
-          "displayName": "Top 5",
-          "shortDisplayName": "Top 5",
-          "description": "Top 5",
-          "abbreviation": "T5",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "top10",
-          "displayName": "Top 10",
-          "shortDisplayName": "Top 10",
-          "description": "Top 10",
-          "abbreviation": "T10",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "totalTime",
-          "displayName": "Total Race Time",
-          "shortDisplayName": "Total Race Time",
-          "description": "Total Race Time",
-          "abbreviation": "TOT",
-          "value": 6434808.0,
-          "displayValue": "1:47:14.808"
-         },
-         {
-          "name": "qual1TimeMS",
-          "displayName": "Q1 Race Time",
-          "shortDisplayName": "Q1 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q1",
-          "value": 0.0,
-          "displayValue": "0.000"
-         },
-         {
-          "name": "qual2TimeMS",
-          "displayName": "Q2 Race Time",
-          "shortDisplayName": "Q2 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q2",
-          "value": 0.0,
-          "displayValue": "0.000"
-         },
-         {
-          "name": "qual3TimeMS",
-          "displayName": "Q3 Race Time",
-          "shortDisplayName": "Q3 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q3",
-          "value": 0.0,
-          "displayValue": "0.000"
-         }
-        ]
-       }
-      ]
-     }
+    {
+     "event_name": "Unload Haulers",
+     "notes": "Winston Salem Fairgrounds Event Center",
+     "start_time_utc": "2026-01-29T15:00:00",
+     "run_type": 0
     },
-    "status": {
-     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/4665/status?lang=en&region=us",
-     "period": 55,
-     "type": {
-      "id": "12",
-      "name": "STATUS_CLASSIFIED",
-      "state": "post",
-      "completed": true,
-      "description": "Classified",
-      "detail": "Classified",
-      "shortDetail": "Classified"
-     },
-     "displayValue": "Classified"
+    {
+     "event_name": "Cars Enter",
+     "notes": "Winston Salem Fairgrounds Event Center",
+     "start_time_utc": "2026-01-29T15:45:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Garage Hours",
+     "notes": "Winston Salem Fairgrounds Event Center",
+     "start_time_utc": "2026-01-29T16:00:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Technical Inspections ",
+     "notes": "Winston Salem Fairgrounds Event Center",
+     "start_time_utc": "2026-01-29T16:30:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Driver / Crew Chief Meeting",
+     "notes": "Sent Electronically",
+     "start_time_utc": "2026-01-30T22:00:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Team Access To Haulers Permitted",
+     "notes": "Equipment Loading",
+     "start_time_utc": "2026-02-04T12:00:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Load Haulers at WS Fairgrounds & Transport to BGS for Unload",
+     "notes": " ",
+     "start_time_utc": "2026-02-04T12:30:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Garage Hours",
+     "notes": " ",
+     "start_time_utc": "2026-02-04T15:30:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Practice / Qualifying ",
+     "notes": "Group 1 / 2 / 3 | Three Timed Sessions Per Group",
+     "start_time_utc": "2026-02-04T18:30:00",
+     "run_type": 1
+    },
+    {
+     "event_name": "Drivers Report For Pre-Race",
+     "notes": "Garage Staging Area",
+     "start_time_utc": "2026-02-04T22:45:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Driver Introductions",
+     "notes": " ",
+     "start_time_utc": "2026-02-04T22:50:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Race",
+     "notes": "200 Laps - Green Only",
+     "start_time_utc": "2026-02-04T23:00:00",
+     "run_type": 3
     }
+   ],
+   "radio_broadcaster": "MRN",
+   "television_broadcaster": "FS2",
+   "satellite_radio_broadcaster": "SIRIUSXM",
+   "master_race_id": 3222,
+   "inspection_complete": true,
+   "playoff_round": 0,
+   "is_qualifying_race": false,
+   "qualifying_race_no": 0,
+   "qualifying_race_id": -1,
+   "has_qualifying": false,
+   "winner_driver_id": 4070,
+   "pole_winner_laptime": null
+  }
+ ],
+ "race_list_1_count": 40,
+ "last_1": {
+  "race_id": 5630,
+  "series_id": 1,
+  "race_season": 2026,
+  "race_name": "South Point 400",
+  "race_type_id": 1,
+  "restrictor_plate": false,
+  "track_id": 42,
+  "track_name": "Las Vegas Motor Speedway",
+  "date_scheduled": "2026-10-04T17:30:00",
+  "race_date": "2026-10-04T17:30:00",
+  "qualifying_date": "2026-10-04T14:30:00",
+  "tunein_date": "2026-10-04T17:30:00",
+  "scheduled_distance": 400.5,
+  "actual_distance": 400.5,
+  "scheduled_laps": 267,
+  "actual_laps": 267,
+  "stage_1_laps": 80,
+  "stage_2_laps": 85,
+  "stage_3_laps": 102,
+  "number_of_cars_in_field": 36,
+  "pole_winner_driver_id": 1361,
+  "pole_winner_speed": 186.787,
+  "number_of_lead_changes": 12,
+  "number_of_leaders": 7,
+  "number_of_cautions": 4,
+  "number_of_caution_laps": 21,
+  "average_speed": 147.363,
+  "total_race_time": "2:43:04",
+  "margin_of_victory": "1.376",
+  "race_purse": 0,
+  "race_comments": "Chase Briscoe has won the South Point 400 at Las Vegas Motor Speedway, his seventh victory in the NASCAR Cup Series. Prior to the start of the race, the following vehicle(s) dropped to the rear of the field under penalty: No. 21 (Backup car) and No. 4 (Unapproved Adjustments).",
+  "attendance": 0,
+  "infractions": [],
+  "schedule": [
+   {
+    "event_name": "Hauler Parade",
+    "notes": "",
+    "start_time_utc": "2026-10-02T21:00:00",
+    "run_type": 0
    },
    {
-    "keys": [
-     "$ref",
-     "athlete",
-     "id",
-     "order",
-     "startOrder",
-     "statistics",
-     "status",
-     "type",
-     "uid",
-     "vehicle",
-     "winner"
-    ],
-    "raw": {
-     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/5829?lang=en&region=us",
-     "id": "5829",
-     "uid": "s:2000~a:5829",
-     "type": "athlete",
-     "order": 2,
-     "startOrder": 3,
-     "winner": false,
-     "vehicle": {
-      "number": "12",
-      "manufacturer": "Mercedes",
-      "teamColor": "00D2BE"
-     }
-    },
-    "statistics": {
-     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/5829/statistics/0?lang=en&region=us",
-     "competition": {
-      "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650?lang=en&region=us"
-     },
-     "splits": {
-      "id": "0",
-      "name": "All Splits",
-      "abbreviation": "TOT",
-      "type": "total",
-      "categories": [
-       {
-        "name": "general",
-        "displayName": "General",
-        "shortDisplayName": "General",
-        "abbreviation": "gen",
-        "summary": "",
-        "stats": [
-         {
-          "name": "lapsLead",
-          "displayName": "Laps Led",
-          "shortDisplayName": "Laps Led",
-          "description": "Total laps led in the race",
-          "abbreviation": "LL",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "lapsCompleted",
-          "displayName": "Laps Completed",
-          "shortDisplayName": "Laps Completed",
-          "description": "Total laps completed in the race",
-          "abbreviation": "LC",
-          "value": 55.0,
-          "displayValue": "55"
-         },
-         {
-          "name": "behindTime",
-          "displayName": "Time Behind",
-          "shortDisplayName": "Time Behind",
-          "description": "Total time behind the field in the race",
-          "abbreviation": "TB",
-          "value": 2307.0,
-          "displayValue": "+2.307"
-         },
-         {
-          "name": "championshipPts",
-          "displayName": "Championship Points",
-          "shortDisplayName": "Championship Points",
-          "description": "Championship points earned for the race",
-          "abbreviation": "CP",
-          "value": 18.0,
-          "displayValue": "18"
-         },
-         {
-          "name": "bonus",
-          "displayName": "Bonus Points",
-          "shortDisplayName": "Bonus",
-          "description": "Bonus points earned for the race",
-          "abbreviation": "B",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "penaltyPts",
-          "displayName": "Penalty Points",
-          "shortDisplayName": "Penalty Points",
-          "description": "Penalty points earned for the race",
-          "abbreviation": "PP",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "pitsTaken",
-          "displayName": "Pits Taken",
-          "shortDisplayName": "Pits Taken",
-          "description": "Pits Taken",
-          "abbreviation": "PT",
-          "value": 3.0,
-          "displayValue": "3"
-         },
-         {
-          "name": "place",
-          "displayName": "Place",
-          "shortDisplayName": "Place",
-          "description": "Place",
-          "abbreviation": "P",
-          "value": 2.0,
-          "displayValue": "2"
-         },
-         {
-          "name": "wins",
-          "displayName": "Wins",
-          "shortDisplayName": "Wins",
-          "description": "Wins",
-          "abbreviation": "WINS",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "pole",
-          "displayName": "Pole",
-          "shortDisplayName": "Pole",
-          "description": "Pole",
-          "abbreviation": "POLE",
-          "value": 3.0,
-          "displayValue": "3"
-         },
-         {
-          "name": "top5",
-          "displayName": "Top 5",
-          "shortDisplayName": "Top 5",
-          "description": "Top 5",
-          "abbreviation": "T5",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "top10",
-          "displayName": "Top 10",
-          "shortDisplayName": "Top 10",
-          "description": "Top 10",
-          "abbreviation": "T10",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "totalTime",
-          "displayName": "Total Race Time",
-          "shortDisplayName": "Total Race Time",
-          "description": "Total Race Time",
-          "abbreviation": "TOT",
-          "value": 6437115.0,
-          "displayValue": "1:47:17.115"
-         },
-         {
-          "name": "qual1TimeMS",
-          "displayName": "Q1 Race Time",
-          "shortDisplayName": "Q1 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q1",
-          "value": 0.0,
-          "displayValue": "0.000"
-         },
-         {
-          "name": "qual2TimeMS",
-          "displayName": "Q2 Race Time",
-          "shortDisplayName": "Q2 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q2",
-          "value": 0.0,
-          "displayValue": "0.000"
-         },
-         {
-          "name": "qual3TimeMS",
-          "displayName": "Q3 Race Time",
-          "shortDisplayName": "Q3 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q3",
-          "value": 0.0,
-          "displayValue": "0.000"
-         }
-        ]
-       }
-      ]
-     }
-    },
-    "status": {
-     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/5829/status?lang=en&region=us",
-     "period": 55,
-     "type": {
-      "id": "12",
-      "name": "STATUS_CLASSIFIED",
-      "state": "post",
-      "completed": true,
-      "description": "Classified",
-      "detail": "Classified",
-      "shortDetail": "Classified"
-     },
-     "displayValue": "Classified"
-    }
+    "event_name": "Haulers Enter",
+    "notes": "Equipment Unloading",
+    "start_time_utc": "2026-10-02T21:30:00",
+    "run_type": 0
    },
    {
-    "keys": [
-     "$ref",
-     "athlete",
-     "id",
-     "order",
-     "startOrder",
-     "statistics",
-     "status",
-     "type",
-     "uid",
-     "vehicle",
-     "winner"
-    ],
-    "raw": {
-     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/868?lang=en&region=us",
-     "id": "868",
-     "uid": "s:2000~a:868",
-     "type": "athlete",
-     "order": 3,
-     "startOrder": 2,
-     "winner": false,
-     "vehicle": {
-      "number": "44",
-      "manufacturer": "Ferrari",
-      "teamColor": "DC0000"
-     }
-    },
-    "statistics": {
-     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/868/statistics/0?lang=en&region=us",
-     "competition": {
-      "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650?lang=en&region=us"
-     },
-     "splits": {
-      "id": "0",
-      "name": "All Splits",
-      "abbreviation": "TOT",
-      "type": "total",
-      "categories": [
-       {
-        "name": "general",
-        "displayName": "General",
-        "shortDisplayName": "General",
-        "abbreviation": "gen",
-        "summary": "",
-        "stats": [
-         {
-          "name": "lapsCompleted",
-          "displayName": "Laps Completed",
-          "shortDisplayName": "Laps Completed",
-          "description": "Total laps completed in the race",
-          "abbreviation": "LC",
-          "value": 55.0,
-          "displayValue": "55"
-         },
-         {
-          "name": "behindTime",
-          "displayName": "Time Behind",
-          "shortDisplayName": "Time Behind",
-          "description": "Total time behind the field in the race",
-          "abbreviation": "TB",
-          "value": 4919.0,
-          "displayValue": "+4.919"
-         },
-         {
-          "name": "championshipPts",
-          "displayName": "Championship Points",
-          "shortDisplayName": "Championship Points",
-          "description": "Championship points earned for the race",
-          "abbreviation": "CP",
-          "value": 15.0,
-          "displayValue": "15"
-         },
-         {
-          "name": "bonus",
-          "displayName": "Bonus Points",
-          "shortDisplayName": "Bonus",
-          "description": "Bonus points earned for the race",
-          "abbreviation": "B",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "penaltyPts",
-          "displayName": "Penalty Points",
-          "shortDisplayName": "Penalty Points",
-          "description": "Penalty points earned for the race",
-          "abbreviation": "PP",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "pitsTaken",
-          "displayName": "Pits Taken",
-          "shortDisplayName": "Pits Taken",
-          "description": "Pits Taken",
-          "abbreviation": "PT",
-          "value": 2.0,
-          "displayValue": "2"
-         },
-         {
-          "name": "place",
-          "displayName": "Place",
-          "shortDisplayName": "Place",
-          "description": "Place",
-          "abbreviation": "P",
-          "value": 3.0,
-          "displayValue": "3"
-         },
-         {
-          "name": "wins",
-          "displayName": "Wins",
-          "shortDisplayName": "Wins",
-          "description": "Wins",
-          "abbreviation": "WINS",
-          "value": 0.0,
-          "displayValue": "0"
-         },
-         {
-          "name": "pole",
-          "displayName": "Pole",
-          "shortDisplayName": "Pole",
-          "description": "Pole",
-          "abbreviation": "POLE",
-          "value": 2.0,
-          "displayValue": "2"
-         },
-         {
-          "name": "top5",
-          "displayName": "Top 5",
-          "shortDisplayName": "Top 5",
-          "description": "Top 5",
-          "abbreviation": "T5",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "top10",
-          "displayName": "Top 10",
-          "shortDisplayName": "Top 10",
-          "description": "Top 10",
-          "abbreviation": "T10",
-          "value": 1.0,
-          "displayValue": "1"
-         },
-         {
-          "name": "totalTime",
-          "displayName": "Total Race Time",
-          "shortDisplayName": "Total Race Time",
-          "description": "Total Race Time",
-          "abbreviation": "TOT",
-          "value": 6439727.0,
-          "displayValue": "1:47:19.727"
-         },
-         {
-          "name": "qual1TimeMS",
-          "displayName": "Q1 Race Time",
-          "shortDisplayName": "Q1 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q1",
-          "value": 0.0,
-          "displayValue": "0.000"
-         },
-         {
-          "name": "qual2TimeMS",
-          "displayName": "Q2 Race Time",
-          "shortDisplayName": "Q2 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q2",
-          "value": 0.0,
-          "displayValue": "0.000"
-         },
-         {
-          "name": "qual3TimeMS",
-          "displayName": "Q3 Race Time",
-          "shortDisplayName": "Q3 Race Time",
-          "description": "Time for the first qualifying run",
-          "abbreviation": "Q3",
-          "value": 0.0,
-          "displayValue": "0.000"
-         }
-        ]
-       }
-      ]
-     }
-    },
-    "status": {
-     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/868/status?lang=en&region=us",
-     "period": 55,
-     "type": {
-      "id": "12",
-      "name": "STATUS_CLASSIFIED",
-      "state": "post",
-      "completed": true,
-      "description": "Classified",
-      "detail": "Classified",
-      "shortDetail": "Classified"
-     },
-     "displayValue": "Classified"
-    }
+    "event_name": "Driver / Crew Chief Meeting",
+    "notes": "Sent Electronically",
+    "start_time_utc": "2026-10-03T00:00:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Garage Hours",
+    "notes": "",
+    "start_time_utc": "2026-10-03T15:00:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Practice (Impound)",
+    "notes": "All Entries",
+    "start_time_utc": "2026-10-03T20:30:00",
+    "run_type": 1
+   },
+   {
+    "event_name": "Qualifying (Impound)",
+    "notes": "  ",
+    "start_time_utc": "2026-10-03T21:35:00",
+    "run_type": 2
+   },
+   {
+    "event_name": "Team Access / Garage and Pit Pass Pass Holder Access Permitted",
+    "notes": "",
+    "start_time_utc": "2026-10-04T17:30:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Garage Hours",
+    "notes": "",
+    "start_time_utc": "2026-10-04T18:30:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Grid Access Open to Properly Credentialed Guests (Until End of Anthem)",
+    "notes": "Pit Road",
+    "start_time_utc": "2026-10-04T20:00:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "The Drivers Meeting",
+    "notes": "NEON Garage",
+    "start_time_utc": "2026-10-04T20:25:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Driver Introductions",
+    "notes": " ",
+    "start_time_utc": "2026-10-04T20:55:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Race",
+    "notes": "Stages 80/165/267 Laps = 400.5 Miles",
+    "start_time_utc": "2026-10-04T21:30:00",
+    "run_type": 3
    }
-  ]
+  ],
+  "radio_broadcaster": "PRN",
+  "television_broadcaster": "USA",
+  "satellite_radio_broadcaster": "SIRIUSXM",
+  "master_race_id": 4705,
+  "inspection_complete": true,
+  "playoff_round": 1,
+  "is_qualifying_race": false,
+  "qualifying_race_no": 0,
+  "qualifying_race_id": -1,
+  "has_qualifying": false,
+  "winner_driver_id": 4228,
+  "pole_winner_laptime": null
  },
- "errors": []
+ "weekend_1_len": 65115,
+ "weekend_1_keys": [
+  "actual_distance",
+  "actual_laps",
+  "attendance",
+  "average_speed",
+  "caution_segments",
+  "date_scheduled",
+  "infractions",
+  "inspection_complete",
+  "margin_of_victory",
+  "master_race_id",
+  "number_of_cars_in_field",
+  "number_of_caution_laps",
+  "number_of_cautions",
+  "number_of_lead_changes",
+  "number_of_leaders",
+  "pit_reports",
+  "playoff_round",
+  "pole_winner_driver_id",
+  "pole_winner_speed",
+  "qualifying_date",
+  "race_comments",
+  "race_date",
+  "race_id",
+  "race_leaders",
+  "race_name",
+  "race_purse",
+  "race_season",
+  "race_type_id",
+  "radio_broadcaster",
+  "restrictor_plate",
+  "results",
+  "satellite_radio_broadcaster",
+  "schedule",
+  "scheduled_distance",
+  "scheduled_laps",
+  "series_id",
+  "stage_1_laps",
+  "stage_2_laps",
+  "stage_3_laps",
+  "stage_4_laps",
+  "stage_results",
+  "television_broadcaster",
+  "timing_run_id",
+  "total_race_time",
+  "track_id",
+  "track_name",
+  "tunein_date"
+ ],
+ "weekend_1_results_first3": [
+  {
+   "result_id": 304282,
+   "finishing_position": 1,
+   "starting_position": 4,
+   "car_number": "19",
+   "driver_fullname": "Chase Briscoe",
+   "driver_id": 4228,
+   "driver_hometown": "Mitchell, Indiana",
+   "hometown_city": "Mitchell",
+   "hometown_state": "Indiana",
+   "hometown_country": "United States",
+   "team_id": 2810,
+   "team_name": "Joe Gibbs Racing",
+   "qualifying_order": 14,
+   "qualifying_position": 4,
+   "qualifying_speed": 186.136,
+   "laps_led": 175,
+   "times_led": 3,
+   "car_make": "Toyota",
+   "car_model": "Camry",
+   "sponsor": "Bass Pro Shops ",
+   "points_earned": 75,
+   "playoff_points_earned": 0,
+   "laps_completed": 267,
+   "finishing_status": "Running",
+   "winnings": 0,
+   "series_id": 1,
+   "race_season": 2026,
+   "race_id": 5630,
+   "owner_fullname": "Joe Gibbs Racing",
+   "crew_chief_id": 7276,
+   "crew_chief_fullname": "James Small",
+   "points_position": 6,
+   "points_delta": 0,
+   "owner_id": 4047,
+   "official_car_number": "19",
+   "disqualified": false,
+   "diff_laps": 0,
+   "diff_time": 0,
+   "pit_box": 0
+  },
+  {
+   "result_id": 304273,
+   "finishing_position": 2,
+   "starting_position": 6,
+   "car_number": "5",
+   "driver_fullname": "Kyle Larson",
+   "driver_id": 4030,
+   "driver_hometown": "Elk Grove, California",
+   "hometown_city": "Elk Grove",
+   "hometown_state": "California",
+   "hometown_country": "United States",
+   "team_id": 1717,
+   "team_name": "Hendrick Motorsports",
+   "qualifying_order": 5,
+   "qualifying_position": 6,
+   "qualifying_speed": 185.861,
+   "laps_led": 0,
+   "times_led": 0,
+   "car_make": "Chevrolet",
+   "car_model": "Camaro",
+   "sponsor": "HendrickCars.com Kyle Busch Tribute",
+   "points_earned": 36,
+   "playoff_points_earned": 0,
+   "laps_completed": 267,
+   "finishing_status": "Running",
+   "winnings": 0,
+   "series_id": 1,
+   "race_season": 2026,
+   "race_id": 5630,
+   "owner_fullname": "Hendrick Motorsports",
+   "crew_chief_id": 7627,
+   "crew_chief_fullname": "Cliff Daniels",
+   "points_position": 1,
+   "points_delta": 0,
+   "owner_id": 1464,
+   "official_car_number": "5",
+   "disqualified": false,
+   "diff_laps": 0,
+   "diff_time": 1376,
+   "pit_box": 0
+  },
+  {
+   "result_id": 304295,
+   "finishing_position": 3,
+   "starting_position": 5,
+   "car_number": "45",
+   "driver_fullname": "Tyler Reddick",
+   "driver_id": 4065,
+   "driver_hometown": "Corning, California",
+   "hometown_city": "Corning",
+   "hometown_state": "California",
+   "hometown_country": "United States",
+   "team_id": 3131,
+   "team_name": "23XI Racing",
+   "qualifying_order": 27,
+   "qualifying_position": 5,
+   "qualifying_speed": 186.111,
+   "laps_led": 1,
+   "times_led": 1,
+   "car_make": "Toyota",
+   "car_model": "Camry",
+   "sponsor": "Jordan Brand",
+   "points_earned": 41,
+   "playoff_points_earned": 0,
+   "laps_completed": 267,
+   "finishing_status": "Running",
+   "winnings": 0,
+   "series_id": 1,
+   "race_season": 2026,
+   "race_id": 5630,
+   "owner_fullname": "23XI Racing",
+   "crew_chief_id": 6801,
+   "crew_chief_fullname": "Billy Scott",
+   "points_position": 7,
+   "points_delta": 0,
+   "owner_id": 7712,
+   "official_car_number": "45",
+   "disqualified": false,
+   "diff_laps": 0,
+   "diff_time": 3292,
+   "pit_box": 0
+  }
+ ],
+ "live_1_keys": [
+  "avg_diff_1to3",
+  "elapsed_time",
+  "flag_state",
+  "lap_number",
+  "laps_in_race",
+  "laps_to_go",
+  "number_of_caution_laps",
+  "number_of_caution_segments",
+  "number_of_lead_changes",
+  "number_of_leaders",
+  "race_id",
+  "run_id",
+  "run_name",
+  "run_type",
+  "series_id",
+  "stage",
+  "time_of_day",
+  "time_of_day_os",
+  "track_id",
+  "track_length",
+  "track_name",
+  "vehicles"
+ ],
+ "live_1_vehicles_first3": [
+  {
+   "average_restart_speed": 173.42,
+   "average_running_position": 2.537,
+   "average_speed": 147.365,
+   "best_lap": 173,
+   "best_lap_speed": 182.094,
+   "best_lap_time": 29.655,
+   "vehicle_manufacturer": "Tyt",
+   "vehicle_number": "19",
+   "driver": {
+    "driver_id": 4228,
+    "full_name": "Chase Briscoe (C)",
+    "first_name": "Chase",
+    "last_name": "Briscoe (C)",
+    "is_in_chase": true
+   },
+   "vehicle_elapsed_time": 9783.856,
+   "fastest_laps_run": 56,
+   "laps_position_improved": 28,
+   "laps_completed": 267,
+   "laps_led": [
+    {
+     "start_lap": 47,
+     "end_lap": 128
+    },
+    {
+     "start_lap": 163,
+     "end_lap": 215
+    },
+    {
+     "start_lap": 228,
+     "end_lap": 267
+    }
+   ],
+   "last_lap_speed": 169.934,
+   "last_lap_time": 31.777,
+   "passes_made": 55,
+   "passing_differential": 2,
+   "position_differential_last_10_percent": 0,
+   "pit_stops": [
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 1085.901,
+     "pit_in_lap_count": 34,
+     "pit_in_leader_lap": 34,
+     "pit_out_elapsed_time": 1123.44,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 9.336
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 3037.574,
+     "pit_in_lap_count": 82,
+     "pit_in_leader_lap": 82,
+     "pit_out_elapsed_time": 3075.038,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 9.156
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 5055.662,
+     "pit_in_lap_count": 128,
+     "pit_in_leader_lap": 128,
+     "pit_out_elapsed_time": 5093.039,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 9.036
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 6444.879,
+     "pit_in_lap_count": 167,
+     "pit_in_leader_lap": 167,
+     "pit_out_elapsed_time": 6481.939,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 8.816
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 8151.084,
+     "pit_in_lap_count": 215,
+     "pit_in_leader_lap": 215,
+     "pit_out_elapsed_time": 8188.108,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 8.916
+    }
+   ],
+   "qualifying_status": 0,
+   "running_position": 1,
+   "status": 1,
+   "delta": 0,
+   "sponsor_name": "Bass Pro Shops",
+   "starting_position": 4,
+   "times_passed": 53,
+   "quality_passes": 39,
+   "is_on_track": true,
+   "is_on_dvp": false
+  },
+  {
+   "average_restart_speed": 170.176,
+   "average_running_position": 12.668,
+   "average_speed": 147.344,
+   "best_lap": 2,
+   "best_lap_speed": 180.433,
+   "best_lap_time": 29.928,
+   "vehicle_manufacturer": "Chv",
+   "vehicle_number": "5",
+   "driver": {
+    "driver_id": 4030,
+    "full_name": "Kyle Larson (C)",
+    "first_name": "Kyle",
+    "last_name": "Larson (C)",
+    "is_in_chase": true
+   },
+   "vehicle_elapsed_time": 9785.232,
+   "fastest_laps_run": 12,
+   "laps_position_improved": 52,
+   "laps_completed": 267,
+   "laps_led": [],
+   "last_lap_speed": 163.924,
+   "last_lap_time": 32.942,
+   "passes_made": 102,
+   "passing_differential": 5,
+   "position_differential_last_10_percent": 1,
+   "pit_stops": [
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 1033.619,
+     "pit_in_lap_count": 32,
+     "pit_in_leader_lap": 33,
+     "pit_out_elapsed_time": 1089.161,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 26.576
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 3044.357,
+     "pit_in_lap_count": 82,
+     "pit_in_leader_lap": 82,
+     "pit_out_elapsed_time": 3082.823,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 9.536
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 3795.399,
+     "pit_in_lap_count": 94,
+     "pit_in_leader_lap": 94,
+     "pit_out_elapsed_time": 3827.943,
+     "pit_stop_type": "TWO_WHEEL_CHANGE_RIGHT",
+     "pit_stop_duration": 4.256
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 6447.169,
+     "pit_in_lap_count": 167,
+     "pit_in_leader_lap": 167,
+     "pit_out_elapsed_time": 6484.852,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 9.436
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 8155.097,
+     "pit_in_lap_count": 215,
+     "pit_in_leader_lap": 216,
+     "pit_out_elapsed_time": 8193.354,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 10.116
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 9852.623,
+     "pit_in_lap_count": 267,
+     "pit_in_leader_lap": 267,
+     "pit_out_elapsed_time": 9877.615,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    }
+   ],
+   "qualifying_status": 0,
+   "running_position": 2,
+   "status": 1,
+   "delta": 1.376,
+   "sponsor_name": "HendrickCars.com/Kyle Busch Tribute",
+   "starting_position": 6,
+   "times_passed": 97,
+   "quality_passes": 50,
+   "is_on_track": true,
+   "is_on_dvp": false
+  },
+  {
+   "average_restart_speed": 171.003,
+   "average_running_position": 9.795,
+   "average_speed": 147.316,
+   "best_lap": 3,
+   "best_lap_speed": 181.099,
+   "best_lap_time": 29.818,
+   "vehicle_manufacturer": "Tyt",
+   "vehicle_number": "45",
+   "driver": {
+    "driver_id": 4065,
+    "full_name": "Tyler Reddick (C)",
+    "first_name": "Tyler",
+    "last_name": "Reddick (C)",
+    "is_in_chase": true
+   },
+   "vehicle_elapsed_time": 9787.148,
+   "fastest_laps_run": 19,
+   "laps_position_improved": 60,
+   "laps_completed": 267,
+   "laps_led": [
+    {
+     "start_lap": 35,
+     "end_lap": 35
+    }
+   ],
+   "last_lap_speed": 156.25,
+   "last_lap_time": 34.56,
+   "passes_made": 115,
+   "passing_differential": 25,
+   "position_differential_last_10_percent": 1,
+   "pit_stops": [
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 1118.771,
+     "pit_in_lap_count": 35,
+     "pit_in_leader_lap": 35,
+     "pit_out_elapsed_time": 1156.717,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 9.336
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 1545.755,
+     "pit_in_lap_count": 45,
+     "pit_in_leader_lap": 45,
+     "pit_out_elapsed_time": 1578.204,
+     "pit_stop_type": "TWO_WHEEL_CHANGE_RIGHT",
+     "pit_stop_duration": 4.056
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 2859.582,
+     "pit_in_lap_count": 80,
+     "pit_in_leader_lap": 80,
+     "pit_out_elapsed_time": 2900.242,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 11.516
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 2958.139,
+     "pit_in_lap_count": 81,
+     "pit_in_leader_lap": 82,
+     "pit_out_elapsed_time": 3046.897,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": 59.456
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 3138.764,
+     "pit_in_lap_count": 83,
+     "pit_in_leader_lap": 83,
+     "pit_out_elapsed_time": 3199.984,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": 31.356
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 5009.024,
+     "pit_in_lap_count": 126,
+     "pit_in_leader_lap": 127,
+     "pit_out_elapsed_time": 5047.162,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 9.856
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 6447.523,
+     "pit_in_lap_count": 167,
+     "pit_in_leader_lap": 167,
+     "pit_out_elapsed_time": 6486.258,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 10.236
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 8154.487,
+     "pit_in_lap_count": 215,
+     "pit_in_leader_lap": 216,
+     "pit_out_elapsed_time": 8193.871,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 11.096
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 9787.148,
+     "pit_in_lap_count": 267,
+     "pit_in_leader_lap": 267,
+     "pit_out_elapsed_time": 9796.21,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 9858.959,
+     "pit_in_lap_count": 267,
+     "pit_in_leader_lap": 267,
+     "pit_out_elapsed_time": 9884.839,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    }
+   ],
+   "qualifying_status": 0,
+   "running_position": 3,
+   "status": 1,
+   "delta": 3.292,
+   "sponsor_name": "Jordan Brand",
+   "starting_position": 5,
+   "times_passed": 90,
+   "quality_passes": 73,
+   "is_on_track": true,
+   "is_on_dvp": false
+  }
+ ],
+ "live_1_error": null,
+ "race_list_2": {
+  "n": 33
+ },
+ "race_list_2_sample": [
+  {
+   "race_id": 5634,
+   "series_id": 2,
+   "race_season": 2026,
+   "race_name": "United Rentals 300",
+   "race_type_id": 1,
+   "restrictor_plate": true,
+   "track_id": 105,
+   "track_name": "Daytona International Speedway",
+   "date_scheduled": "2026-02-14T17:00:00",
+   "race_date": "2026-02-14T17:00:00",
+   "qualifying_date": "2026-02-14T17:00:00",
+   "tunein_date": "2026-02-14T17:00:00",
+   "scheduled_distance": 300,
+   "actual_distance": 300,
+   "scheduled_laps": 120,
+   "actual_laps": 120,
+   "stage_1_laps": 30,
+   "stage_2_laps": 30,
+   "stage_3_laps": 60,
+   "number_of_cars_in_field": 38,
+   "pole_winner_driver_id": 4133,
+   "pole_winner_speed": 182.223,
+   "number_of_lead_changes": 15,
+   "number_of_leaders": 8,
+   "number_of_cautions": 7,
+   "number_of_caution_laps": 36,
+   "average_speed": 116.618,
+   "total_race_time": "2:34:21",
+   "margin_of_victory": "0.081",
+   "race_purse": 0,
+   "race_comments": "Austin Hill has won the United Rentals 300 at Daytona International Speedway, his 15th victory in the NASCAR O'Reilly Auto Parts Series. Prior to the start of the race, the following vehicle(s) dropped to the rear of the field under penalty: No. 4 (Driver Change), and Nos. 24, 28, 30, 99  (Unapproved Adjustment).",
+   "attendance": 0,
+   "infractions": [],
+   "schedule": [
+    {
+     "event_name": "Random Drawing (Qualifying Lineup)",
+     "notes": "Virtual",
+     "start_time_utc": "2026-02-10T19:00:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Driver / Crew Chief Meeting",
+     "notes": "Sent Electronically",
+     "start_time_utc": "2026-02-10T22:00:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Haulers Enter",
+     "notes": "Equipment Unloading",
+     "start_time_utc": "2026-02-13T11:00:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Team Access for Equipment Set Up Permitted",
+     "notes": "Garage Area",
+     "start_time_utc": "2026-02-13T14:00:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Garage Hours",
+     "notes": "",
+     "start_time_utc": "2026-02-13T14:30:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Mandatory Spotters Meeting ",
+     "notes": "The Drivers Meeting Room",
+     "start_time_utc": "2026-02-13T15:30:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Autograph Session",
+     "notes": "Fan Zone",
+     "start_time_utc": "2026-02-13T18:00:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Practice",
+     "notes": " ",
+     "start_time_utc": "2026-02-13T21:30:00",
+     "run_type": 1
+    },
+    {
+     "event_name": "Garage Hours",
+     "notes": "",
+     "start_time_utc": "2026-02-14T12:00:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Qualifying (Impound)",
+     "notes": " ",
+     "start_time_utc": "2026-02-14T15:00:00",
+     "run_type": 2
+    },
+    {
+     "event_name": "Grid Access Open to Properly Credentialed Guests (Until End of Anthem)",
+     "notes": "Pit Road",
+     "start_time_utc": "2026-02-14T21:15:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Driver Introductions",
+     "notes": " ",
+     "start_time_utc": "2026-02-14T21:30:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Race",
+     "notes": "Stages 30/60/120 Laps = 300 Miles",
+     "start_time_utc": "2026-02-14T22:00:00",
+     "run_type": 3
+    }
+   ],
+   "radio_broadcaster": "MRN",
+   "television_broadcaster": "CW",
+   "satellite_radio_broadcaster": "SIRIUSXM",
+   "master_race_id": 2131,
+   "inspection_complete": true,
+   "playoff_round": 0,
+   "is_qualifying_race": false,
+   "qualifying_race_no": 0,
+   "qualifying_race_id": -1,
+   "has_qualifying": false,
+   "winner_driver_id": 4133,
+   "pole_winner_laptime": null
+  }
+ ],
+ "race_list_2_count": 33,
+ "last_2": {
+  "race_id": 5663,
+  "series_id": 2,
+  "race_season": 2026,
+  "race_name": "Focused Health 302",
+  "race_type_id": 1,
+  "restrictor_plate": false,
+  "track_id": 42,
+  "track_name": "Las Vegas Motor Speedway",
+  "date_scheduled": "2026-10-03T19:30:00",
+  "race_date": "2026-10-03T19:30:00",
+  "qualifying_date": "2026-10-03T16:30:00",
+  "tunein_date": "2026-10-03T19:30:00",
+  "scheduled_distance": 301.5,
+  "actual_distance": 301.5,
+  "scheduled_laps": 201,
+  "actual_laps": 201,
+  "stage_1_laps": 45,
+  "stage_2_laps": 45,
+  "stage_3_laps": 111,
+  "number_of_cars_in_field": 36,
+  "pole_winner_driver_id": 4502,
+  "pole_winner_speed": 180.856,
+  "number_of_lead_changes": 15,
+  "number_of_leaders": 9,
+  "number_of_cautions": 3,
+  "number_of_caution_laps": 21,
+  "average_speed": 135.37,
+  "total_race_time": "2:13:38",
+  "margin_of_victory": "0.287",
+  "race_purse": 0,
+  "race_comments": "Corey Day has won the Focused Health 302 at Las Vegas Motor Speedway, his third victory in the NASCAR O'Reilly Auto Parts Series. Prior to the start of the race, the following vehicle(s) dropped to the rear of the field under penalty: Nos. 0, 18 (Unapproved Adjustments).",
+  "attendance": 0,
+  "infractions": [],
+  "schedule": [
+   {
+    "event_name": "Haulers Enter",
+    "notes": "Equipment Unloading",
+    "start_time_utc": "2026-10-02T19:00:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Team Access for Equipment Set Up Permitted",
+    "notes": "Garage Area",
+    "start_time_utc": "2026-10-02T20:30:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Garage Hours",
+    "notes": "",
+    "start_time_utc": "2026-10-02T21:00:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Driver / Crew Chief Meeting",
+    "notes": "Sent Electronically",
+    "start_time_utc": "2026-10-03T00:00:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Team Access To Haulers Permitted",
+    "notes": "",
+    "start_time_utc": "2026-10-03T15:00:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Garage Hours",
+    "notes": "",
+    "start_time_utc": "2026-10-03T16:30:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Practice",
+    "notes": "  ",
+    "start_time_utc": "2026-10-03T18:00:00",
+    "run_type": 1
+   },
+   {
+    "event_name": "Qualifying (Impound)",
+    "notes": "  ",
+    "start_time_utc": "2026-10-03T19:05:00",
+    "run_type": 2
+   },
+   {
+    "event_name": "Autograph Session",
+    "notes": "NEON Garage",
+    "start_time_utc": "2026-10-03T20:45:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Grid Access Open to Properly Credentialed Guests (Until End of Anthem)",
+    "notes": "Pit Road",
+    "start_time_utc": "2026-10-03T22:55:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Driver Introductions",
+    "notes": " ",
+    "start_time_utc": "2026-10-03T23:05:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Race",
+    "notes": "Stages 45/90/201 Laps = 301.5 Miles",
+    "start_time_utc": "2026-10-03T23:30:00",
+    "run_type": 3
+   }
+  ],
+  "radio_broadcaster": "PRN",
+  "television_broadcaster": "CW",
+  "satellite_radio_broadcaster": "SIRIUSXM",
+  "master_race_id": 4082,
+  "inspection_complete": true,
+  "playoff_round": 1,
+  "is_qualifying_race": false,
+  "qualifying_race_no": 0,
+  "qualifying_race_id": -1,
+  "has_qualifying": false,
+  "winner_driver_id": 4502,
+  "pole_winner_laptime": null
+ },
+ "weekend_2_len": 65596,
+ "weekend_2_keys": [
+  "actual_distance",
+  "actual_laps",
+  "attendance",
+  "average_speed",
+  "caution_segments",
+  "date_scheduled",
+  "infractions",
+  "inspection_complete",
+  "margin_of_victory",
+  "master_race_id",
+  "number_of_cars_in_field",
+  "number_of_caution_laps",
+  "number_of_cautions",
+  "number_of_lead_changes",
+  "number_of_leaders",
+  "pit_reports",
+  "playoff_round",
+  "pole_winner_driver_id",
+  "pole_winner_speed",
+  "qualifying_date",
+  "race_comments",
+  "race_date",
+  "race_id",
+  "race_leaders",
+  "race_name",
+  "race_purse",
+  "race_season",
+  "race_type_id",
+  "radio_broadcaster",
+  "restrictor_plate",
+  "results",
+  "satellite_radio_broadcaster",
+  "schedule",
+  "scheduled_distance",
+  "scheduled_laps",
+  "series_id",
+  "stage_1_laps",
+  "stage_2_laps",
+  "stage_3_laps",
+  "stage_4_laps",
+  "stage_results",
+  "television_broadcaster",
+  "timing_run_id",
+  "total_race_time",
+  "track_id",
+  "track_name",
+  "tunein_date"
+ ],
+ "weekend_2_results_first3": [
+  {
+   "result_id": 304241,
+   "finishing_position": 1,
+   "starting_position": 1,
+   "car_number": "17",
+   "driver_fullname": "Corey Day",
+   "driver_id": 4502,
+   "driver_hometown": "Clovis, California",
+   "hometown_city": "Clovis",
+   "hometown_state": "California",
+   "hometown_country": "United States",
+   "team_id": 3167,
+   "team_name": "Hendrick Motorsports",
+   "qualifying_order": 9,
+   "qualifying_position": 1,
+   "qualifying_speed": 180.856,
+   "laps_led": 136,
+   "times_led": 6,
+   "car_make": "Chevrolet",
+   "car_model": "Camaro",
+   "sponsor": "HendrickCars.com ",
+   "points_earned": 75,
+   "playoff_points_earned": 0,
+   "laps_completed": 201,
+   "finishing_status": "Running",
+   "winnings": 0,
+   "series_id": 2,
+   "race_season": 2026,
+   "race_id": 5663,
+   "owner_fullname": "Hendrick Motorsports",
+   "crew_chief_id": 8024,
+   "crew_chief_fullname": "Adam Wall",
+   "points_position": 5,
+   "points_delta": 0,
+   "owner_id": 1464,
+   "official_car_number": "17",
+   "disqualified": false,
+   "diff_laps": 0,
+   "diff_time": 0,
+   "pit_box": 0
+  },
+  {
+   "result_id": 304235,
+   "finishing_position": 2,
+   "starting_position": 9,
+   "car_number": "1",
+   "driver_fullname": "Carson Kvapil",
+   "driver_id": 4467,
+   "driver_hometown": "Mooresville, North Carolina",
+   "hometown_city": "Mooresville",
+   "hometown_state": "North Carolina",
+   "hometown_country": "United States",
+   "team_id": 1898,
+   "team_name": "JR Motorsports",
+   "qualifying_order": 3,
+   "qualifying_position": 9,
+   "qualifying_speed": 178.024,
+   "laps_led": 3,
+   "times_led": 2,
+   "car_make": "Chevrolet",
+   "car_model": "Camaro",
+   "sponsor": "Bass Pro Shops ",
+   "points_earned": 42,
+   "playoff_points_earned": 0,
+   "laps_completed": 201,
+   "finishing_status": "Running",
+   "winnings": 0,
+   "series_id": 2,
+   "race_season": 2026,
+   "race_id": 5663,
+   "owner_fullname": "JR Motorsports",
+   "crew_chief_id": 555,
+   "crew_chief_fullname": "Rodney Childers",
+   "points_position": 2,
+   "points_delta": 0,
+   "owner_id": 2261,
+   "official_car_number": "1",
+   "disqualified": false,
+   "diff_laps": 0,
+   "diff_time": 287,
+   "pit_box": 0
+  },
+  {
+   "result_id": 304237,
+   "finishing_position": 3,
+   "starting_position": 10,
+   "car_number": "2",
+   "driver_fullname": "Jesse Love",
+   "driver_id": 4463,
+   "driver_hometown": "Menlo Park, California",
+   "hometown_city": "Menlo Park",
+   "hometown_state": "California",
+   "hometown_country": "United States",
+   "team_id": 2598,
+   "team_name": "Richard Childress Racing",
+   "qualifying_order": 5,
+   "qualifying_position": 10,
+   "qualifying_speed": 177.713,
+   "laps_led": 0,
+   "times_led": 0,
+   "car_make": "Chevrolet",
+   "car_model": "Camaro",
+   "sponsor": "Whelen",
+   "points_earned": 44,
+   "playoff_points_earned": 0,
+   "laps_completed": 201,
+   "finishing_status": "Running",
+   "winnings": 0,
+   "series_id": 2,
+   "race_season": 2026,
+   "race_id": 5663,
+   "owner_fullname": "Richard Childress Racing",
+   "crew_chief_id": 6326,
+   "crew_chief_fullname": "Danny Stockman Jr",
+   "points_position": 3,
+   "points_delta": 0,
+   "owner_id": 553,
+   "official_car_number": "2",
+   "disqualified": false,
+   "diff_laps": 0,
+   "diff_time": 6634,
+   "pit_box": 0
+  }
+ ],
+ "live_2_keys": [
+  "avg_diff_1to3",
+  "elapsed_time",
+  "flag_state",
+  "lap_number",
+  "laps_in_race",
+  "laps_to_go",
+  "number_of_caution_laps",
+  "number_of_caution_segments",
+  "number_of_lead_changes",
+  "number_of_leaders",
+  "race_id",
+  "run_id",
+  "run_name",
+  "run_type",
+  "series_id",
+  "stage",
+  "time_of_day",
+  "time_of_day_os",
+  "track_id",
+  "track_length",
+  "track_name",
+  "vehicles"
+ ],
+ "live_2_vehicles_first3": [
+  {
+   "average_restart_speed": 169.745,
+   "average_running_position": 1.688,
+   "average_speed": 135.377,
+   "best_lap": 100,
+   "best_lap_speed": 177.561,
+   "best_lap_time": 30.412,
+   "vehicle_manufacturer": "Chv",
+   "vehicle_number": "17",
+   "driver": {
+    "driver_id": 4502,
+    "full_name": "Corey Day (C)",
+    "first_name": "Corey",
+    "last_name": "Day (C)",
+    "is_in_chase": true
+   },
+   "vehicle_elapsed_time": 8017.625,
+   "fastest_laps_run": 46,
+   "laps_position_improved": 14,
+   "laps_completed": 201,
+   "laps_led": [
+    {
+     "start_lap": 0,
+     "end_lap": 1
+    },
+    {
+     "start_lap": 9,
+     "end_lap": 48
+    },
+    {
+     "start_lap": 100,
+     "end_lap": 144
+    },
+    {
+     "start_lap": 149,
+     "end_lap": 189
+    },
+    {
+     "start_lap": 192,
+     "end_lap": 198
+    },
+    {
+     "start_lap": 200,
+     "end_lap": 201
+    }
+   ],
+   "last_lap_speed": 161.04,
+   "last_lap_time": 33.532,
+   "passes_made": 22,
+   "passing_differential": 5,
+   "position_differential_last_10_percent": 0,
+   "pit_stops": [
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 1787.765,
+     "pit_in_lap_count": 48,
+     "pit_in_leader_lap": 48,
+     "pit_out_elapsed_time": 1832.413,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 15.196
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 4199.436,
+     "pit_in_lap_count": 93,
+     "pit_in_leader_lap": 93,
+     "pit_out_elapsed_time": 4244.464,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 15.996
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 6137.245,
+     "pit_in_lap_count": 144,
+     "pit_in_leader_lap": 144,
+     "pit_out_elapsed_time": 6180.817,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 14.776
+    }
+   ],
+   "qualifying_status": 0,
+   "running_position": 1,
+   "status": 1,
+   "delta": 0,
+   "sponsor_name": "HendrickCars.com",
+   "starting_position": 1,
+   "times_passed": 17,
+   "quality_passes": 22,
+   "is_on_track": true,
+   "is_on_dvp": false
+  },
+  {
+   "average_restart_speed": 168.782,
+   "average_running_position": 4.96,
+   "average_speed": 135.372,
+   "best_lap": 100,
+   "best_lap_speed": 176.419,
+   "best_lap_time": 30.609,
+   "vehicle_manufacturer": "Chv",
+   "vehicle_number": "1",
+   "driver": {
+    "driver_id": 4467,
+    "full_name": "Carson Kvapil (C)",
+    "first_name": "Carson",
+    "last_name": "Kvapil (C)",
+    "is_in_chase": true
+   },
+   "vehicle_elapsed_time": 8017.912,
+   "fastest_laps_run": 25,
+   "laps_position_improved": 16,
+   "laps_completed": 201,
+   "laps_led": [
+    {
+     "start_lap": 190,
+     "end_lap": 191
+    },
+    {
+     "start_lap": 199,
+     "end_lap": 199
+    }
+   ],
+   "last_lap_speed": 159.853,
+   "last_lap_time": 33.781,
+   "passes_made": 34,
+   "passing_differential": 4,
+   "position_differential_last_10_percent": 0,
+   "pit_stops": [
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 1791.682,
+     "pit_in_lap_count": 48,
+     "pit_in_leader_lap": 48,
+     "pit_out_elapsed_time": 1835.7,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 15.036
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 4200.042,
+     "pit_in_lap_count": 93,
+     "pit_in_leader_lap": 93,
+     "pit_out_elapsed_time": 4243.813,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 14.736
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 6106.186,
+     "pit_in_lap_count": 143,
+     "pit_in_leader_lap": 144,
+     "pit_out_elapsed_time": 6149.651,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 14.516
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 8065.178,
+     "pit_in_lap_count": 201,
+     "pit_in_leader_lap": 201,
+     "pit_out_elapsed_time": 8079.202,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    }
+   ],
+   "qualifying_status": 0,
+   "running_position": 2,
+   "status": 1,
+   "delta": 0.287,
+   "sponsor_name": "Bass Pro Shops",
+   "starting_position": 9,
+   "times_passed": 30,
+   "quality_passes": 28,
+   "is_on_track": true,
+   "is_on_dvp": false
+  },
+  {
+   "average_restart_speed": 168.25,
+   "average_running_position": 5.51,
+   "average_speed": 135.265,
+   "best_lap": 100,
+   "best_lap_speed": 176.528,
+   "best_lap_time": 30.59,
+   "vehicle_manufacturer": "Chv",
+   "vehicle_number": "2",
+   "driver": {
+    "driver_id": 4463,
+    "full_name": "Jesse Love (C)",
+    "first_name": "Jesse",
+    "last_name": "Love (C)",
+    "is_in_chase": true
+   },
+   "vehicle_elapsed_time": 8024.259,
+   "fastest_laps_run": 11,
+   "laps_position_improved": 21,
+   "laps_completed": 201,
+   "laps_led": [],
+   "last_lap_speed": 158.922,
+   "last_lap_time": 33.979,
+   "passes_made": 46,
+   "passing_differential": 3,
+   "position_differential_last_10_percent": 1,
+   "pit_stops": [
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 1789.127,
+     "pit_in_lap_count": 48,
+     "pit_in_leader_lap": 48,
+     "pit_out_elapsed_time": 1832.234,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 13.856
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 4201.298,
+     "pit_in_lap_count": 93,
+     "pit_in_leader_lap": 93,
+     "pit_out_elapsed_time": 4244.328,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 14.016
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 6108.573,
+     "pit_in_lap_count": 143,
+     "pit_in_leader_lap": 144,
+     "pit_out_elapsed_time": 6151.813,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 14.136
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 8087.239,
+     "pit_in_lap_count": 201,
+     "pit_in_leader_lap": 201,
+     "pit_out_elapsed_time": 8102.928,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    }
+   ],
+   "qualifying_status": 0,
+   "running_position": 3,
+   "status": 1,
+   "delta": 6.634,
+   "sponsor_name": "Whelen",
+   "starting_position": 10,
+   "times_passed": 43,
+   "quality_passes": 41,
+   "is_on_track": true,
+   "is_on_dvp": false
+  }
+ ],
+ "live_2_error": null,
+ "race_list_3": {
+  "n": 25
+ },
+ "race_list_3_sample": [
+  {
+   "race_id": 5667,
+   "series_id": 3,
+   "race_season": 2026,
+   "race_name": "Fresh From Florida 250",
+   "race_type_id": 1,
+   "restrictor_plate": true,
+   "track_id": 105,
+   "track_name": "Daytona International Speedway",
+   "date_scheduled": "2026-02-13T19:30:00",
+   "race_date": "2026-02-13T19:30:00",
+   "qualifying_date": "2026-02-13T19:30:00",
+   "tunein_date": "2026-02-13T19:30:00",
+   "scheduled_distance": 250,
+   "actual_distance": 255,
+   "scheduled_laps": 100,
+   "actual_laps": 102,
+   "stage_1_laps": 20,
+   "stage_2_laps": 20,
+   "stage_3_laps": 62,
+   "number_of_cars_in_field": 37,
+   "pole_winner_driver_id": 4235,
+   "pole_winner_speed": 176.883,
+   "number_of_lead_changes": 32,
+   "number_of_leaders": 12,
+   "number_of_cautions": 6,
+   "number_of_caution_laps": 31,
+   "average_speed": 121.429,
+   "total_race_time": "2:06:00",
+   "margin_of_victory": "0.044",
+   "race_purse": 0,
+   "race_comments": "Chandler Smith has won the Fresh From Florida 250 at Daytona International Speedway, his eighth victory in the NASCAR CRAFTSMAN Truck Series. Prior to the start of the race, no vehicle(s) dropped to the rear of the field under penalty.",
+   "attendance": 0,
+   "infractions": [],
+   "schedule": [
+    {
+     "event_name": "Driver / Crew Chief Meeting",
+     "notes": "Sent Electronically",
+     "start_time_utc": "2026-02-10T22:00:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Haulers Enter",
+     "notes": "Equipment Unloading",
+     "start_time_utc": "2026-02-12T13:00:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Team Access for Equipment Set Up Permitted",
+     "notes": "",
+     "start_time_utc": "2026-02-12T14:30:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Garage Hours",
+     "notes": "",
+     "start_time_utc": "2026-02-12T15:00:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Rookie Meeting",
+     "notes": "Series Inspection Trailer",
+     "start_time_utc": "2026-02-12T15:30:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Random Drawing (Qualifying Lineup)",
+     "notes": "Virtual",
+     "start_time_utc": "2026-02-12T20:00:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Practice",
+     "notes": " ",
+     "start_time_utc": "2026-02-12T22:00:00",
+     "run_type": 1
+    },
+    {
+     "event_name": "Mandatory Spotters Meeting ",
+     "notes": "The Drivers Meeting Room",
+     "start_time_utc": "2026-02-13T15:30:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Garage Hours",
+     "notes": "",
+     "start_time_utc": "2026-02-13T16:30:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Trucks Pushed To Pit Road",
+     "notes": "From 110 Gate, Turn 4 Skid Pad",
+     "start_time_utc": "2026-02-13T19:15:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Qualifying (Impound)",
+     "notes": " ",
+     "start_time_utc": "2026-02-13T20:00:00",
+     "run_type": 2
+    },
+    {
+     "event_name": "Autograph Session",
+     "notes": "Fan Zone",
+     "start_time_utc": "2026-02-13T22:00:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Grid Access Open to Properly Credentialed Guests (Until End of Anthem)",
+     "notes": "Pit Road",
+     "start_time_utc": "2026-02-13T23:45:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Driver Introductions",
+     "notes": " ",
+     "start_time_utc": "2026-02-14T00:10:00",
+     "run_type": 0
+    },
+    {
+     "event_name": "Race",
+     "notes": "Stages 20/40/100 Laps = 250 Miles",
+     "start_time_utc": "2026-02-14T00:30:00",
+     "run_type": 3
+    }
+   ],
+   "radio_broadcaster": "NRN",
+   "television_broadcaster": "FS1",
+   "satellite_radio_broadcaster": "SIRIUSXM",
+   "master_race_id": 3020,
+   "inspection_complete": true,
+   "playoff_round": 0,
+   "is_qualifying_race": false,
+   "qualifying_race_no": 0,
+   "qualifying_race_id": -1,
+   "has_qualifying": false,
+   "winner_driver_id": 4312,
+   "pole_winner_laptime": null
+  }
+ ],
+ "race_list_3_count": 25,
+ "last_3": {
+  "race_id": 5675,
+  "series_id": 3,
+  "race_season": 2026,
+  "race_name": "Race to Stop Suicide 200",
+  "race_type_id": 1,
+  "restrictor_plate": false,
+  "track_id": 41,
+  "track_name": "Kansas Speedway",
+  "date_scheduled": "2026-09-26T13:00:00",
+  "race_date": "2026-09-26T13:00:00",
+  "qualifying_date": "2026-09-26T12:00:00",
+  "tunein_date": "2026-09-26T13:00:00",
+  "scheduled_distance": 201,
+  "actual_distance": 201,
+  "scheduled_laps": 134,
+  "actual_laps": 134,
+  "stage_1_laps": 30,
+  "stage_2_laps": 24,
+  "stage_3_laps": 80,
+  "number_of_cars_in_field": 36,
+  "pole_winner_driver_id": 4416,
+  "pole_winner_speed": 0,
+  "number_of_lead_changes": 9,
+  "number_of_leaders": 5,
+  "number_of_cautions": 7,
+  "number_of_caution_laps": 47,
+  "average_speed": 92.996,
+  "total_race_time": "2:09:41",
+  "margin_of_victory": "1.358",
+  "race_purse": 0,
+  "race_comments": "Kaden Honeycutt has won the Race To End Suicide 200 at Kansas Speedway, his third victory in the NASCAR CRAFTSMAN Truck Series. Prior to the start of the race, no vehicle(s) dropped to the rear of the field under penalty. ",
+  "attendance": 0,
+  "infractions": [],
+  "schedule": [
+   {
+    "event_name": "Driver / Crew Chief Meeting",
+    "notes": "Sent Electronically",
+    "start_time_utc": "2026-09-24T22:00:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Haulers Enter",
+    "notes": "Equipment Unloading",
+    "start_time_utc": "2026-09-25T13:00:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Team Access for Equipment Set Up Permitted",
+    "notes": "Garage Area",
+    "start_time_utc": "2026-09-25T15:30:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Garage Hours",
+    "notes": "",
+    "start_time_utc": "2026-09-25T16:00:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Rookie Meeting",
+    "notes": "Series Inspection Trailer",
+    "start_time_utc": "2026-09-25T16:30:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Practice",
+    "notes": "Canceled",
+    "start_time_utc": "2026-09-25T21:00:00",
+    "run_type": 1
+   },
+   {
+    "event_name": "Qualifying (Impound)",
+    "notes": "Canceled - Line Up Set Per Rule Book",
+    "start_time_utc": "2026-09-25T22:05:00",
+    "run_type": 2
+   },
+   {
+    "event_name": "Garage Hours",
+    "notes": "",
+    "start_time_utc": "2026-09-26T14:00:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Grid Access Open to Properly Credentialed Guests (Until End of Anthem)",
+    "notes": "Pit Road",
+    "start_time_utc": "2026-09-26T16:30:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Driver Introductions",
+    "notes": " ",
+    "start_time_utc": "2026-09-26T16:40:00",
+    "run_type": 0
+   },
+   {
+    "event_name": "Race",
+    "notes": "Stages 30/60/134 Laps = 201 Miles",
+    "start_time_utc": "2026-09-26T17:00:00",
+    "run_type": 3
+   }
+  ],
+  "radio_broadcaster": "NRN",
+  "television_broadcaster": "FS1",
+  "satellite_radio_broadcaster": "SIRIUSXM",
+  "master_race_id": 3055,
+  "inspection_complete": true,
+  "playoff_round": 1,
+  "is_qualifying_race": false,
+  "qualifying_race_no": 0,
+  "qualifying_race_id": -1,
+  "has_qualifying": false,
+  "winner_driver_id": 4427,
+  "pole_winner_laptime": null
+ },
+ "weekend_3_len": 52861,
+ "weekend_3_keys": [
+  "actual_distance",
+  "actual_laps",
+  "attendance",
+  "average_speed",
+  "caution_segments",
+  "date_scheduled",
+  "infractions",
+  "inspection_complete",
+  "margin_of_victory",
+  "master_race_id",
+  "number_of_cars_in_field",
+  "number_of_caution_laps",
+  "number_of_cautions",
+  "number_of_lead_changes",
+  "number_of_leaders",
+  "pit_reports",
+  "playoff_round",
+  "pole_winner_driver_id",
+  "pole_winner_speed",
+  "qualifying_date",
+  "race_comments",
+  "race_date",
+  "race_id",
+  "race_leaders",
+  "race_name",
+  "race_purse",
+  "race_season",
+  "race_type_id",
+  "radio_broadcaster",
+  "restrictor_plate",
+  "results",
+  "satellite_radio_broadcaster",
+  "schedule",
+  "scheduled_distance",
+  "scheduled_laps",
+  "series_id",
+  "stage_1_laps",
+  "stage_2_laps",
+  "stage_3_laps",
+  "stage_4_laps",
+  "stage_results",
+  "television_broadcaster",
+  "timing_run_id",
+  "total_race_time",
+  "track_id",
+  "track_name",
+  "tunein_date"
+ ],
+ "weekend_3_results_first3": [
+  {
+   "result_id": 304168,
+   "finishing_position": 1,
+   "starting_position": 4,
+   "car_number": "11",
+   "driver_fullname": "Kaden Honeycutt",
+   "driver_id": 4427,
+   "driver_hometown": "Willow Park, Texas",
+   "hometown_city": "Willow Park",
+   "hometown_state": "Texas",
+   "hometown_country": "United States",
+   "team_id": 2740,
+   "team_name": "TRICON Garage",
+   "qualifying_order": 8,
+   "qualifying_position": 4,
+   "qualifying_speed": 0,
+   "laps_led": 111,
+   "times_led": 4,
+   "car_make": "Toyota",
+   "car_model": "Tundra",
+   "sponsor": "Safelite",
+   "points_earned": 75,
+   "playoff_points_earned": 0,
+   "laps_completed": 134,
+   "finishing_status": "Running",
+   "winnings": 0,
+   "series_id": 3,
+   "race_season": 2026,
+   "race_id": 5675,
+   "owner_fullname": "TRICON Garage",
+   "crew_chief_id": 5033,
+   "crew_chief_fullname": "Scott Zipadelli",
+   "points_position": 1,
+   "points_delta": 0,
+   "owner_id": 7845,
+   "official_car_number": "11",
+   "disqualified": false,
+   "diff_laps": 0,
+   "diff_time": 0,
+   "pit_box": 0
+  },
+  {
+   "result_id": 304193,
+   "finishing_position": 2,
+   "starting_position": 25,
+   "car_number": "91",
+   "driver_fullname": "Christian Eckes",
+   "driver_id": 4268,
+   "driver_hometown": "Greenville, New York",
+   "hometown_city": "Greenville",
+   "hometown_state": "New York",
+   "hometown_country": "United States",
+   "team_id": 3155,
+   "team_name": "McAnally Hilgemann Racing",
+   "qualifying_order": 33,
+   "qualifying_position": 25,
+   "qualifying_speed": 0,
+   "laps_led": 0,
+   "times_led": 0,
+   "car_make": "Chevrolet",
+   "car_model": "Silverado",
+   "sponsor": "Motion Industries",
+   "points_earned": 48,
+   "playoff_points_earned": 0,
+   "laps_completed": 134,
+   "finishing_status": "Running",
+   "winnings": 0,
+   "series_id": 3,
+   "race_season": 2026,
+   "race_id": 5675,
+   "owner_fullname": "McAnally Hilgemann Racing",
+   "crew_chief_id": 6935,
+   "crew_chief_fullname": "David Elenz",
+   "points_position": 5,
+   "points_delta": 0,
+   "owner_id": 5247,
+   "official_car_number": "91",
+   "disqualified": false,
+   "diff_laps": 0,
+   "diff_time": 1358,
+   "pit_box": 0
+  },
+  {
+   "result_id": 304164,
+   "finishing_position": 3,
+   "starting_position": 5,
+   "car_number": "5",
+   "driver_fullname": "Brent Crews",
+   "driver_id": 4504,
+   "driver_hometown": "Davidson, North Carolina",
+   "hometown_city": "Davidson",
+   "hometown_state": "North Carolina",
+   "hometown_country": "United States",
+   "team_id": 3193,
+   "team_name": "TRICON Garage",
+   "qualifying_order": 4,
+   "qualifying_position": 5,
+   "qualifying_speed": 0,
+   "laps_led": 0,
+   "times_led": 0,
+   "car_make": "Toyota",
+   "car_model": "Tundra",
+   "sponsor": "Mobil 1",
+   "points_earned": 0,
+   "playoff_points_earned": 0,
+   "laps_completed": 134,
+   "finishing_status": "Running",
+   "winnings": 0,
+   "series_id": 3,
+   "race_season": 2026,
+   "race_id": 5675,
+   "owner_fullname": "TRICON Garage",
+   "crew_chief_id": 7522,
+   "crew_chief_fullname": "Seth Smith",
+   "points_position": 99,
+   "points_delta": 0,
+   "owner_id": 7845,
+   "official_car_number": "5",
+   "disqualified": false,
+   "diff_laps": 0,
+   "diff_time": 1815,
+   "pit_box": 0
+  }
+ ],
+ "live_3_keys": [
+  "avg_diff_1to3",
+  "elapsed_time",
+  "flag_state",
+  "lap_number",
+  "laps_in_race",
+  "laps_to_go",
+  "number_of_caution_laps",
+  "number_of_caution_segments",
+  "number_of_lead_changes",
+  "number_of_leaders",
+  "race_id",
+  "run_id",
+  "run_name",
+  "run_type",
+  "series_id",
+  "stage",
+  "time_of_day",
+  "time_of_day_os",
+  "track_id",
+  "track_length",
+  "track_name",
+  "vehicles"
+ ],
+ "live_3_vehicles_first3": [
+  {
+   "average_restart_speed": 165.061,
+   "average_running_position": 1.526,
+   "average_speed": 92.988,
+   "best_lap": 103,
+   "best_lap_speed": 172.54,
+   "best_lap_time": 31.297,
+   "vehicle_manufacturer": "Tyt",
+   "vehicle_number": "11",
+   "driver": {
+    "driver_id": 4427,
+    "full_name": "Kaden Honeycutt (C)",
+    "first_name": "Kaden",
+    "last_name": "Honeycutt (C)",
+    "is_in_chase": true
+   },
+   "vehicle_elapsed_time": 7781.608,
+   "fastest_laps_run": 34,
+   "laps_position_improved": 11,
+   "laps_completed": 134,
+   "laps_led": [
+    {
+     "start_lap": 1,
+     "end_lap": 47
+    },
+    {
+     "start_lap": 50,
+     "end_lap": 60
+    },
+    {
+     "start_lap": 78,
+     "end_lap": 118
+    },
+    {
+     "start_lap": 123,
+     "end_lap": 134
+    }
+   ],
+   "last_lap_speed": 166.487,
+   "last_lap_time": 32.435,
+   "passes_made": 18,
+   "passing_differential": 13,
+   "position_differential_last_10_percent": 5,
+   "pit_stops": [
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 1118.711,
+     "pit_in_lap_count": 31,
+     "pit_in_leader_lap": 31,
+     "pit_out_elapsed_time": 1161.947,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 15.116
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 3072.097,
+     "pit_in_lap_count": 60,
+     "pit_in_leader_lap": 60,
+     "pit_out_elapsed_time": 3117.078,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 17.016
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 3928.667,
+     "pit_in_lap_count": 69,
+     "pit_in_leader_lap": 69,
+     "pit_out_elapsed_time": 4066.825,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 5781.913,
+     "pit_in_lap_count": 97,
+     "pit_in_leader_lap": 97,
+     "pit_out_elapsed_time": 5825.496,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 15.576
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 6779.633,
+     "pit_in_lap_count": 117,
+     "pit_in_leader_lap": 117,
+     "pit_out_elapsed_time": 6822.539,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 14.736
+    }
+   ],
+   "qualifying_status": 0,
+   "running_position": 1,
+   "status": 1,
+   "delta": 0,
+   "sponsor_name": "Safelite",
+   "starting_position": 4,
+   "times_passed": 5,
+   "quality_passes": 16,
+   "is_on_track": true,
+   "is_on_dvp": false
+  },
+  {
+   "average_restart_speed": 163.999,
+   "average_running_position": 5.037,
+   "average_speed": 92.972,
+   "best_lap": 103,
+   "best_lap_speed": 173.36,
+   "best_lap_time": 31.149,
+   "vehicle_manufacturer": "Chv",
+   "vehicle_number": "91",
+   "driver": {
+    "driver_id": 4268,
+    "full_name": "Christian Eckes (C)",
+    "first_name": "Christian",
+    "last_name": "Eckes (C)",
+    "is_in_chase": true
+   },
+   "vehicle_elapsed_time": 7782.966,
+   "fastest_laps_run": 8,
+   "laps_position_improved": 27,
+   "laps_completed": 134,
+   "laps_led": [],
+   "last_lap_speed": 166.945,
+   "last_lap_time": 32.346,
+   "passes_made": 53,
+   "passing_differential": 26,
+   "position_differential_last_10_percent": 5,
+   "pit_stops": [
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 1120.495,
+     "pit_in_lap_count": 31,
+     "pit_in_leader_lap": 31,
+     "pit_out_elapsed_time": 1164.325,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 15.776
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 3072.672,
+     "pit_in_lap_count": 60,
+     "pit_in_leader_lap": 60,
+     "pit_out_elapsed_time": 3116.514,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 15.636
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 3933.01,
+     "pit_in_lap_count": 69,
+     "pit_in_leader_lap": 69,
+     "pit_out_elapsed_time": 4073.427,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 5782.492,
+     "pit_in_lap_count": 97,
+     "pit_in_leader_lap": 97,
+     "pit_out_elapsed_time": 5828.478,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 17.896
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 6780.295,
+     "pit_in_lap_count": 117,
+     "pit_in_leader_lap": 117,
+     "pit_out_elapsed_time": 6823.582,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 15.216
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 7826.844,
+     "pit_in_lap_count": 134,
+     "pit_in_leader_lap": 134,
+     "pit_out_elapsed_time": 7863.366,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    }
+   ],
+   "qualifying_status": 0,
+   "running_position": 2,
+   "status": 1,
+   "delta": 1.358,
+   "sponsor_name": "Motion Industries",
+   "starting_position": 25,
+   "times_passed": 27,
+   "quality_passes": 39,
+   "is_on_track": true,
+   "is_on_dvp": false
+  },
+  {
+   "average_restart_speed": 160.952,
+   "average_running_position": 13.63,
+   "average_speed": 92.967,
+   "best_lap": 105,
+   "best_lap_speed": 171.162,
+   "best_lap_time": 31.549,
+   "vehicle_manufacturer": "Tyt",
+   "vehicle_number": "5",
+   "driver": {
+    "driver_id": 4504,
+    "full_name": "Brent Crews(i)",
+    "first_name": "Brent",
+    "last_name": "Crews(i)",
+    "is_in_chase": false
+   },
+   "vehicle_elapsed_time": 7783.423,
+   "fastest_laps_run": 1,
+   "laps_position_improved": 41,
+   "laps_completed": 134,
+   "laps_led": [],
+   "last_lap_speed": 167.806,
+   "last_lap_time": 32.18,
+   "passes_made": 62,
+   "passing_differential": 7,
+   "position_differential_last_10_percent": 10,
+   "pit_stops": [
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 0,
+     "pit_in_lap_count": 0,
+     "pit_in_leader_lap": 0,
+     "pit_out_elapsed_time": 0,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 1121.448,
+     "pit_in_lap_count": 31,
+     "pit_in_leader_lap": 31,
+     "pit_out_elapsed_time": 1181.289,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 29.996
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 3079.243,
+     "pit_in_lap_count": 60,
+     "pit_in_leader_lap": 60,
+     "pit_out_elapsed_time": 3127.529,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 19.296
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 3946.315,
+     "pit_in_lap_count": 69,
+     "pit_in_leader_lap": 69,
+     "pit_out_elapsed_time": 4101.345,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 5784.708,
+     "pit_in_lap_count": 97,
+     "pit_in_leader_lap": 97,
+     "pit_out_elapsed_time": 5832.651,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 18.636
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 6781.978,
+     "pit_in_lap_count": 117,
+     "pit_in_leader_lap": 117,
+     "pit_out_elapsed_time": 6828.308,
+     "pit_stop_type": "FOUR_WHEEL_CHANGE",
+     "pit_stop_duration": 17.456
+    },
+    {
+     "positions_gained_lossed": 0,
+     "pit_in_elapsed_time": 7825.408,
+     "pit_in_lap_count": 134,
+     "pit_in_leader_lap": 134,
+     "pit_out_elapsed_time": 7854.997,
+     "pit_stop_type": "OTHER",
+     "pit_stop_duration": -1
+    }
+   ],
+   "qualifying_status": 0,
+   "running_position": 3,
+   "status": 1,
+   "delta": 1.815,
+   "sponsor_name": "Mobil 1",
+   "starting_position": 5,
+   "times_passed": 55,
+   "quality_passes": 37,
+   "is_on_track": true,
+   "is_on_dvp": false
+  }
+ ],
+ "live_3_error": null
 }
