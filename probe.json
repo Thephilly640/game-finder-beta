@@ -1,0 +1,1447 @@
+{
+ "nascar-premier:202610040787": {
+  "name": "NASCAR Cup Series at Las Vegas",
+  "comp_keys": [
+   "$ref",
+   "bracketAvailable",
+   "broadcasts",
+   "commentaryAvailable",
+   "competitors",
+   "conversationAvailable",
+   "date",
+   "gameSource",
+   "guid",
+   "highlightsAvailable",
+   "id",
+   "links",
+   "liveAvailable",
+   "onWatchESPN",
+   "previewAvailable",
+   "recapAvailable",
+   "recent",
+   "statistics",
+   "status",
+   "summaryAvailable",
+   "ticketsAvailable",
+   "timeValid",
+   "uid",
+   "wallclockAvailable"
+  ],
+  "competitors_inline": true,
+  "rows": [
+   {
+    "keys": [
+     "$ref",
+     "athlete",
+     "id",
+     "order",
+     "startOrder",
+     "statistics",
+     "type",
+     "uid",
+     "vehicle",
+     "winner"
+    ],
+    "raw": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787/competitors/4773?lang=en&region=us",
+     "id": "4773",
+     "uid": "s:2000~a:4773",
+     "type": "athlete",
+     "order": 1,
+     "startOrder": 4,
+     "winner": true,
+     "vehicle": {
+      "number": "19",
+      "manufacturer": "Toyota",
+      "crewChief": "Dave Rogers",
+      "owner": "Joe Gibbs",
+      "sponsor": "Bass Pro Shops",
+      "team": "Joe Gibbs Racing"
+     }
+    },
+    "statistics": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787/competitors/4773/statistics/0?lang=en&region=us",
+     "competition": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787?lang=en&region=us"
+     },
+     "splits": {
+      "id": "0",
+      "name": "All Splits",
+      "abbreviation": "TOT",
+      "type": "total",
+      "categories": [
+       {
+        "name": "gapToLeader",
+        "displayName": "Gap To Leader",
+        "shortDisplayName": "Gap To Leader",
+        "abbreviation": "gtl",
+        "summary": "",
+        "stats": []
+       },
+       {
+        "name": "general",
+        "displayName": "General",
+        "shortDisplayName": "General",
+        "abbreviation": "gen",
+        "summary": "",
+        "stats": [
+         {
+          "name": "lapsLead",
+          "displayName": "Laps Led",
+          "shortDisplayName": "Laps Led",
+          "description": "Total laps led in the race",
+          "abbreviation": "LL",
+          "value": 175.0,
+          "displayValue": "175"
+         },
+         {
+          "name": "lapsCompleted",
+          "displayName": "Laps Completed",
+          "shortDisplayName": "Laps Completed",
+          "description": "Total laps completed in the race",
+          "abbreviation": "LC",
+          "value": 267.0,
+          "displayValue": "267"
+         },
+         {
+          "name": "behindLaps",
+          "displayName": "Laps Behind",
+          "shortDisplayName": "Laps Behind",
+          "description": "Total laps behind the field in the race",
+          "abbreviation": "LH",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "behindTime",
+          "displayName": "Time Behind",
+          "shortDisplayName": "Time Behind",
+          "description": "Total time behind the field in the race",
+          "abbreviation": "TB",
+          "value": 0.0,
+          "displayValue": ".000"
+         },
+         {
+          "name": "championshipPts",
+          "displayName": "Championship Points",
+          "shortDisplayName": "Championship Points",
+          "description": "Championship points earned for the race",
+          "abbreviation": "CP",
+          "value": 75.0,
+          "displayValue": "75"
+         },
+         {
+          "name": "bonus",
+          "displayName": "Bonus Points",
+          "shortDisplayName": "Bonus",
+          "description": "Bonus points earned for the race",
+          "abbreviation": "B",
+          "value": 20.0,
+          "displayValue": "20"
+         },
+         {
+          "name": "penaltyPts",
+          "displayName": "Penalty Points",
+          "shortDisplayName": "Penalty Points",
+          "description": "Penalty points earned for the race",
+          "abbreviation": "PP",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "highPos",
+          "displayName": "High Position",
+          "shortDisplayName": "High Position",
+          "description": "Highest position held for the race",
+          "abbreviation": "HP",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "fastestLap",
+          "displayName": "Fastest Lap Time",
+          "shortDisplayName": "Fastest Lap Time",
+          "description": "Fastest Lap Time",
+          "abbreviation": "FLT",
+          "value": 0.0,
+          "displayValue": ".000"
+         },
+         {
+          "name": "pitsTaken",
+          "displayName": "Pits Taken",
+          "shortDisplayName": "Pits Taken",
+          "description": "Pits Taken",
+          "abbreviation": "PT",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "lastPitLap",
+          "displayName": "Last Pit Lap",
+          "shortDisplayName": "Last Pit Lap",
+          "description": "Last Pit Lap",
+          "abbreviation": "LPL",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "tookLead",
+          "displayName": "Took Lead",
+          "shortDisplayName": "Took Lead",
+          "description": "Took Lead",
+          "abbreviation": "TL",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "fastestLapNum",
+          "displayName": "Fastest Lap Number",
+          "shortDisplayName": "Fastest Lap Number",
+          "description": "Fastest Lap Number",
+          "abbreviation": "FLT",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "place",
+          "displayName": "Place",
+          "shortDisplayName": "Place",
+          "description": "Place",
+          "abbreviation": "P",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "wins",
+          "displayName": "Wins",
+          "shortDisplayName": "Wins",
+          "description": "Wins",
+          "abbreviation": "WINS",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "pole",
+          "displayName": "Pole",
+          "shortDisplayName": "Pole",
+          "description": "Pole",
+          "abbreviation": "POLE",
+          "value": 4.0,
+          "displayValue": "4"
+         },
+         {
+          "name": "top5",
+          "displayName": "Top 5",
+          "shortDisplayName": "Top 5",
+          "description": "Top 5",
+          "abbreviation": "T5",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "top10",
+          "displayName": "Top 10",
+          "shortDisplayName": "Top 10",
+          "description": "Top 10",
+          "abbreviation": "T10",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "qual1TimeMS",
+          "displayName": "Q1 Race Time",
+          "shortDisplayName": "Q1 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q1",
+          "value": 0.0,
+          "displayValue": "0.000"
+         },
+         {
+          "name": "qual2TimeMS",
+          "displayName": "Q2 Race Time",
+          "shortDisplayName": "Q2 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q2",
+          "value": 0.0,
+          "displayValue": "0.000"
+         },
+         {
+          "name": "qual3TimeMS",
+          "displayName": "Q3 Race Time",
+          "shortDisplayName": "Q3 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q3",
+          "value": 0.0,
+          "displayValue": "0.000"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   },
+   {
+    "keys": [
+     "$ref",
+     "athlete",
+     "id",
+     "order",
+     "startOrder",
+     "statistics",
+     "type",
+     "uid",
+     "vehicle",
+     "winner"
+    ],
+    "raw": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787/competitors/4539?lang=en&region=us",
+     "id": "4539",
+     "uid": "s:2000~a:4539",
+     "type": "athlete",
+     "order": 2,
+     "startOrder": 6,
+     "winner": false,
+     "vehicle": {
+      "number": "5",
+      "manufacturer": "Chevrolet",
+      "sponsor": "HendrickCars.com",
+      "team": "Hendrick Motorsports"
+     }
+    },
+    "statistics": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787/competitors/4539/statistics/0?lang=en&region=us",
+     "competition": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787?lang=en&region=us"
+     },
+     "splits": {
+      "id": "0",
+      "name": "All Splits",
+      "abbreviation": "TOT",
+      "type": "total",
+      "categories": [
+       {
+        "name": "gapToLeader",
+        "displayName": "Gap To Leader",
+        "shortDisplayName": "Gap To Leader",
+        "abbreviation": "gtl",
+        "summary": "",
+        "stats": []
+       },
+       {
+        "name": "general",
+        "displayName": "General",
+        "shortDisplayName": "General",
+        "abbreviation": "gen",
+        "summary": "",
+        "stats": [
+         {
+          "name": "lapsLead",
+          "displayName": "Laps Led",
+          "shortDisplayName": "Laps Led",
+          "description": "Total laps led in the race",
+          "abbreviation": "LL",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "lapsCompleted",
+          "displayName": "Laps Completed",
+          "shortDisplayName": "Laps Completed",
+          "description": "Total laps completed in the race",
+          "abbreviation": "LC",
+          "value": 267.0,
+          "displayValue": "267"
+         },
+         {
+          "name": "behindLaps",
+          "displayName": "Laps Behind",
+          "shortDisplayName": "Laps Behind",
+          "description": "Total laps behind the field in the race",
+          "abbreviation": "LH",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "behindTime",
+          "displayName": "Time Behind",
+          "shortDisplayName": "Time Behind",
+          "description": "Total time behind the field in the race",
+          "abbreviation": "TB",
+          "value": 0.0,
+          "displayValue": ".000"
+         },
+         {
+          "name": "championshipPts",
+          "displayName": "Championship Points",
+          "shortDisplayName": "Championship Points",
+          "description": "Championship points earned for the race",
+          "abbreviation": "CP",
+          "value": 36.0,
+          "displayValue": "36"
+         },
+         {
+          "name": "bonus",
+          "displayName": "Bonus Points",
+          "shortDisplayName": "Bonus",
+          "description": "Bonus points earned for the race",
+          "abbreviation": "B",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "penaltyPts",
+          "displayName": "Penalty Points",
+          "shortDisplayName": "Penalty Points",
+          "description": "Penalty points earned for the race",
+          "abbreviation": "PP",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "highPos",
+          "displayName": "High Position",
+          "shortDisplayName": "High Position",
+          "description": "Highest position held for the race",
+          "abbreviation": "HP",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "fastestLap",
+          "displayName": "Fastest Lap Time",
+          "shortDisplayName": "Fastest Lap Time",
+          "description": "Fastest Lap Time",
+          "abbreviation": "FLT",
+          "value": 0.0,
+          "displayValue": ".000"
+         },
+         {
+          "name": "pitsTaken",
+          "displayName": "Pits Taken",
+          "shortDisplayName": "Pits Taken",
+          "description": "Pits Taken",
+          "abbreviation": "PT",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "lastPitLap",
+          "displayName": "Last Pit Lap",
+          "shortDisplayName": "Last Pit Lap",
+          "description": "Last Pit Lap",
+          "abbreviation": "LPL",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "tookLead",
+          "displayName": "Took Lead",
+          "shortDisplayName": "Took Lead",
+          "description": "Took Lead",
+          "abbreviation": "TL",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "fastestLapNum",
+          "displayName": "Fastest Lap Number",
+          "shortDisplayName": "Fastest Lap Number",
+          "description": "Fastest Lap Number",
+          "abbreviation": "FLT",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "place",
+          "displayName": "Place",
+          "shortDisplayName": "Place",
+          "description": "Place",
+          "abbreviation": "P",
+          "value": 2.0,
+          "displayValue": "2"
+         },
+         {
+          "name": "wins",
+          "displayName": "Wins",
+          "shortDisplayName": "Wins",
+          "description": "Wins",
+          "abbreviation": "WINS",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "pole",
+          "displayName": "Pole",
+          "shortDisplayName": "Pole",
+          "description": "Pole",
+          "abbreviation": "POLE",
+          "value": 6.0,
+          "displayValue": "6"
+         },
+         {
+          "name": "top5",
+          "displayName": "Top 5",
+          "shortDisplayName": "Top 5",
+          "description": "Top 5",
+          "abbreviation": "T5",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "top10",
+          "displayName": "Top 10",
+          "shortDisplayName": "Top 10",
+          "description": "Top 10",
+          "abbreviation": "T10",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "qual1TimeMS",
+          "displayName": "Q1 Race Time",
+          "shortDisplayName": "Q1 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q1",
+          "value": 0.0,
+          "displayValue": "0.000"
+         },
+         {
+          "name": "qual2TimeMS",
+          "displayName": "Q2 Race Time",
+          "shortDisplayName": "Q2 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q2",
+          "value": 0.0,
+          "displayValue": "0.000"
+         },
+         {
+          "name": "qual3TimeMS",
+          "displayName": "Q3 Race Time",
+          "shortDisplayName": "Q3 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q3",
+          "value": 0.0,
+          "displayValue": "0.000"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   },
+   {
+    "keys": [
+     "$ref",
+     "athlete",
+     "id",
+     "order",
+     "startOrder",
+     "statistics",
+     "type",
+     "uid",
+     "vehicle",
+     "winner"
+    ],
+    "raw": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787/competitors/4577?lang=en&region=us",
+     "id": "4577",
+     "uid": "s:2000~a:4577",
+     "type": "athlete",
+     "order": 3,
+     "startOrder": 5,
+     "winner": false,
+     "vehicle": {
+      "number": "45",
+      "manufacturer": "Toyota",
+      "sponsor": "Chumba Casino"
+     }
+    },
+    "statistics": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787/competitors/4577/statistics/0?lang=en&region=us",
+     "competition": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/nascar-premier/events/202610040787/competitions/202610040787?lang=en&region=us"
+     },
+     "splits": {
+      "id": "0",
+      "name": "All Splits",
+      "abbreviation": "TOT",
+      "type": "total",
+      "categories": [
+       {
+        "name": "gapToLeader",
+        "displayName": "Gap To Leader",
+        "shortDisplayName": "Gap To Leader",
+        "abbreviation": "gtl",
+        "summary": "",
+        "stats": []
+       },
+       {
+        "name": "general",
+        "displayName": "General",
+        "shortDisplayName": "General",
+        "abbreviation": "gen",
+        "summary": "",
+        "stats": [
+         {
+          "name": "lapsLead",
+          "displayName": "Laps Led",
+          "shortDisplayName": "Laps Led",
+          "description": "Total laps led in the race",
+          "abbreviation": "LL",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "lapsCompleted",
+          "displayName": "Laps Completed",
+          "shortDisplayName": "Laps Completed",
+          "description": "Total laps completed in the race",
+          "abbreviation": "LC",
+          "value": 267.0,
+          "displayValue": "267"
+         },
+         {
+          "name": "behindLaps",
+          "displayName": "Laps Behind",
+          "shortDisplayName": "Laps Behind",
+          "description": "Total laps behind the field in the race",
+          "abbreviation": "LH",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "behindTime",
+          "displayName": "Time Behind",
+          "shortDisplayName": "Time Behind",
+          "description": "Total time behind the field in the race",
+          "abbreviation": "TB",
+          "value": 0.0,
+          "displayValue": ".000"
+         },
+         {
+          "name": "championshipPts",
+          "displayName": "Championship Points",
+          "shortDisplayName": "Championship Points",
+          "description": "Championship points earned for the race",
+          "abbreviation": "CP",
+          "value": 41.0,
+          "displayValue": "41"
+         },
+         {
+          "name": "bonus",
+          "displayName": "Bonus Points",
+          "shortDisplayName": "Bonus",
+          "description": "Bonus points earned for the race",
+          "abbreviation": "B",
+          "value": 7.0,
+          "displayValue": "7"
+         },
+         {
+          "name": "penaltyPts",
+          "displayName": "Penalty Points",
+          "shortDisplayName": "Penalty Points",
+          "description": "Penalty points earned for the race",
+          "abbreviation": "PP",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "highPos",
+          "displayName": "High Position",
+          "shortDisplayName": "High Position",
+          "description": "Highest position held for the race",
+          "abbreviation": "HP",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "fastestLap",
+          "displayName": "Fastest Lap Time",
+          "shortDisplayName": "Fastest Lap Time",
+          "description": "Fastest Lap Time",
+          "abbreviation": "FLT",
+          "value": 0.0,
+          "displayValue": ".000"
+         },
+         {
+          "name": "pitsTaken",
+          "displayName": "Pits Taken",
+          "shortDisplayName": "Pits Taken",
+          "description": "Pits Taken",
+          "abbreviation": "PT",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "lastPitLap",
+          "displayName": "Last Pit Lap",
+          "shortDisplayName": "Last Pit Lap",
+          "description": "Last Pit Lap",
+          "abbreviation": "LPL",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "tookLead",
+          "displayName": "Took Lead",
+          "shortDisplayName": "Took Lead",
+          "description": "Took Lead",
+          "abbreviation": "TL",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "fastestLapNum",
+          "displayName": "Fastest Lap Number",
+          "shortDisplayName": "Fastest Lap Number",
+          "description": "Fastest Lap Number",
+          "abbreviation": "FLT",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "place",
+          "displayName": "Place",
+          "shortDisplayName": "Place",
+          "description": "Place",
+          "abbreviation": "P",
+          "value": 3.0,
+          "displayValue": "3"
+         },
+         {
+          "name": "wins",
+          "displayName": "Wins",
+          "shortDisplayName": "Wins",
+          "description": "Wins",
+          "abbreviation": "WINS",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "pole",
+          "displayName": "Pole",
+          "shortDisplayName": "Pole",
+          "description": "Pole",
+          "abbreviation": "POLE",
+          "value": 5.0,
+          "displayValue": "5"
+         },
+         {
+          "name": "top5",
+          "displayName": "Top 5",
+          "shortDisplayName": "Top 5",
+          "description": "Top 5",
+          "abbreviation": "T5",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "top10",
+          "displayName": "Top 10",
+          "shortDisplayName": "Top 10",
+          "description": "Top 10",
+          "abbreviation": "T10",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "qual1TimeMS",
+          "displayName": "Q1 Race Time",
+          "shortDisplayName": "Q1 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q1",
+          "value": 0.0,
+          "displayValue": "0.000"
+         },
+         {
+          "name": "qual2TimeMS",
+          "displayName": "Q2 Race Time",
+          "shortDisplayName": "Q2 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q2",
+          "value": 0.0,
+          "displayValue": "0.000"
+         },
+         {
+          "name": "qual3TimeMS",
+          "displayName": "Q3 Race Time",
+          "shortDisplayName": "Q3 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q3",
+          "value": 0.0,
+          "displayValue": "0.000"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  ]
+ },
+ "f1:600060990": {
+  "name": "Gulf Air Bahrain Grand Prix in Malaysia",
+  "comp_keys": [
+   "$ref",
+   "bracketAvailable",
+   "broadcasts",
+   "commentaryAvailable",
+   "competitors",
+   "conversationAvailable",
+   "date",
+   "gameSource",
+   "guid",
+   "highlightsAvailable",
+   "id",
+   "liveAvailable",
+   "notes",
+   "onWatchESPN",
+   "previewAvailable",
+   "recapAvailable",
+   "recent",
+   "session",
+   "statistics",
+   "status",
+   "summaryAvailable",
+   "ticketsAvailable",
+   "timeValid",
+   "type",
+   "uid",
+   "wallclockAvailable"
+  ],
+  "competitors_inline": true,
+  "rows": [
+   {
+    "keys": [
+     "$ref",
+     "athlete",
+     "id",
+     "order",
+     "startOrder",
+     "statistics",
+     "status",
+     "type",
+     "uid",
+     "vehicle",
+     "winner"
+    ],
+    "raw": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/4665?lang=en&region=us",
+     "id": "4665",
+     "uid": "s:2000~a:4665",
+     "type": "athlete",
+     "order": 1,
+     "startOrder": 1,
+     "winner": true,
+     "vehicle": {
+      "number": "3",
+      "manufacturer": "Red Bull",
+      "teamColor": "00327D"
+     }
+    },
+    "statistics": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/4665/statistics/0?lang=en&region=us",
+     "competition": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650?lang=en&region=us"
+     },
+     "splits": {
+      "id": "0",
+      "name": "All Splits",
+      "abbreviation": "TOT",
+      "type": "total",
+      "categories": [
+       {
+        "name": "general",
+        "displayName": "General",
+        "shortDisplayName": "General",
+        "abbreviation": "gen",
+        "summary": "",
+        "stats": [
+         {
+          "name": "lapsLead",
+          "displayName": "Laps Led",
+          "shortDisplayName": "Laps Led",
+          "description": "Total laps led in the race",
+          "abbreviation": "LL",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "lapsCompleted",
+          "displayName": "Laps Completed",
+          "shortDisplayName": "Laps Completed",
+          "description": "Total laps completed in the race",
+          "abbreviation": "LC",
+          "value": 55.0,
+          "displayValue": "55"
+         },
+         {
+          "name": "championshipPts",
+          "displayName": "Championship Points",
+          "shortDisplayName": "Championship Points",
+          "description": "Championship points earned for the race",
+          "abbreviation": "CP",
+          "value": 25.0,
+          "displayValue": "25"
+         },
+         {
+          "name": "bonus",
+          "displayName": "Bonus Points",
+          "shortDisplayName": "Bonus",
+          "description": "Bonus points earned for the race",
+          "abbreviation": "B",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "penaltyPts",
+          "displayName": "Penalty Points",
+          "shortDisplayName": "Penalty Points",
+          "description": "Penalty points earned for the race",
+          "abbreviation": "PP",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "fastestLap",
+          "displayName": "Fastest Lap Time",
+          "shortDisplayName": "Fastest Lap Time",
+          "description": "Fastest Lap Time",
+          "abbreviation": "FLT",
+          "value": 98220.0,
+          "displayValue": "1:38.220"
+         },
+         {
+          "name": "pitsTaken",
+          "displayName": "Pits Taken",
+          "shortDisplayName": "Pits Taken",
+          "description": "Pits Taken",
+          "abbreviation": "PT",
+          "value": 3.0,
+          "displayValue": "3"
+         },
+         {
+          "name": "fastestLapNum",
+          "displayName": "Fastest Lap Number",
+          "shortDisplayName": "Fastest Lap Number",
+          "description": "Fastest Lap Number",
+          "abbreviation": "FLT",
+          "value": 55.0,
+          "displayValue": "55"
+         },
+         {
+          "name": "place",
+          "displayName": "Place",
+          "shortDisplayName": "Place",
+          "description": "Place",
+          "abbreviation": "P",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "wins",
+          "displayName": "Wins",
+          "shortDisplayName": "Wins",
+          "description": "Wins",
+          "abbreviation": "WINS",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "pole",
+          "displayName": "Pole",
+          "shortDisplayName": "Pole",
+          "description": "Pole",
+          "abbreviation": "POLE",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "top5",
+          "displayName": "Top 5",
+          "shortDisplayName": "Top 5",
+          "description": "Top 5",
+          "abbreviation": "T5",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "top10",
+          "displayName": "Top 10",
+          "shortDisplayName": "Top 10",
+          "description": "Top 10",
+          "abbreviation": "T10",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "totalTime",
+          "displayName": "Total Race Time",
+          "shortDisplayName": "Total Race Time",
+          "description": "Total Race Time",
+          "abbreviation": "TOT",
+          "value": 6434808.0,
+          "displayValue": "1:47:14.808"
+         },
+         {
+          "name": "qual1TimeMS",
+          "displayName": "Q1 Race Time",
+          "shortDisplayName": "Q1 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q1",
+          "value": 0.0,
+          "displayValue": "0.000"
+         },
+         {
+          "name": "qual2TimeMS",
+          "displayName": "Q2 Race Time",
+          "shortDisplayName": "Q2 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q2",
+          "value": 0.0,
+          "displayValue": "0.000"
+         },
+         {
+          "name": "qual3TimeMS",
+          "displayName": "Q3 Race Time",
+          "shortDisplayName": "Q3 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q3",
+          "value": 0.0,
+          "displayValue": "0.000"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    "status": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/4665/status?lang=en&region=us",
+     "period": 55,
+     "type": {
+      "id": "12",
+      "name": "STATUS_CLASSIFIED",
+      "state": "post",
+      "completed": true,
+      "description": "Classified",
+      "detail": "Classified",
+      "shortDetail": "Classified"
+     },
+     "displayValue": "Classified"
+    }
+   },
+   {
+    "keys": [
+     "$ref",
+     "athlete",
+     "id",
+     "order",
+     "startOrder",
+     "statistics",
+     "status",
+     "type",
+     "uid",
+     "vehicle",
+     "winner"
+    ],
+    "raw": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/5829?lang=en&region=us",
+     "id": "5829",
+     "uid": "s:2000~a:5829",
+     "type": "athlete",
+     "order": 2,
+     "startOrder": 3,
+     "winner": false,
+     "vehicle": {
+      "number": "12",
+      "manufacturer": "Mercedes",
+      "teamColor": "00D2BE"
+     }
+    },
+    "statistics": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/5829/statistics/0?lang=en&region=us",
+     "competition": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650?lang=en&region=us"
+     },
+     "splits": {
+      "id": "0",
+      "name": "All Splits",
+      "abbreviation": "TOT",
+      "type": "total",
+      "categories": [
+       {
+        "name": "general",
+        "displayName": "General",
+        "shortDisplayName": "General",
+        "abbreviation": "gen",
+        "summary": "",
+        "stats": [
+         {
+          "name": "lapsLead",
+          "displayName": "Laps Led",
+          "shortDisplayName": "Laps Led",
+          "description": "Total laps led in the race",
+          "abbreviation": "LL",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "lapsCompleted",
+          "displayName": "Laps Completed",
+          "shortDisplayName": "Laps Completed",
+          "description": "Total laps completed in the race",
+          "abbreviation": "LC",
+          "value": 55.0,
+          "displayValue": "55"
+         },
+         {
+          "name": "behindTime",
+          "displayName": "Time Behind",
+          "shortDisplayName": "Time Behind",
+          "description": "Total time behind the field in the race",
+          "abbreviation": "TB",
+          "value": 2307.0,
+          "displayValue": "+2.307"
+         },
+         {
+          "name": "championshipPts",
+          "displayName": "Championship Points",
+          "shortDisplayName": "Championship Points",
+          "description": "Championship points earned for the race",
+          "abbreviation": "CP",
+          "value": 18.0,
+          "displayValue": "18"
+         },
+         {
+          "name": "bonus",
+          "displayName": "Bonus Points",
+          "shortDisplayName": "Bonus",
+          "description": "Bonus points earned for the race",
+          "abbreviation": "B",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "penaltyPts",
+          "displayName": "Penalty Points",
+          "shortDisplayName": "Penalty Points",
+          "description": "Penalty points earned for the race",
+          "abbreviation": "PP",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "pitsTaken",
+          "displayName": "Pits Taken",
+          "shortDisplayName": "Pits Taken",
+          "description": "Pits Taken",
+          "abbreviation": "PT",
+          "value": 3.0,
+          "displayValue": "3"
+         },
+         {
+          "name": "place",
+          "displayName": "Place",
+          "shortDisplayName": "Place",
+          "description": "Place",
+          "abbreviation": "P",
+          "value": 2.0,
+          "displayValue": "2"
+         },
+         {
+          "name": "wins",
+          "displayName": "Wins",
+          "shortDisplayName": "Wins",
+          "description": "Wins",
+          "abbreviation": "WINS",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "pole",
+          "displayName": "Pole",
+          "shortDisplayName": "Pole",
+          "description": "Pole",
+          "abbreviation": "POLE",
+          "value": 3.0,
+          "displayValue": "3"
+         },
+         {
+          "name": "top5",
+          "displayName": "Top 5",
+          "shortDisplayName": "Top 5",
+          "description": "Top 5",
+          "abbreviation": "T5",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "top10",
+          "displayName": "Top 10",
+          "shortDisplayName": "Top 10",
+          "description": "Top 10",
+          "abbreviation": "T10",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "totalTime",
+          "displayName": "Total Race Time",
+          "shortDisplayName": "Total Race Time",
+          "description": "Total Race Time",
+          "abbreviation": "TOT",
+          "value": 6437115.0,
+          "displayValue": "1:47:17.115"
+         },
+         {
+          "name": "qual1TimeMS",
+          "displayName": "Q1 Race Time",
+          "shortDisplayName": "Q1 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q1",
+          "value": 0.0,
+          "displayValue": "0.000"
+         },
+         {
+          "name": "qual2TimeMS",
+          "displayName": "Q2 Race Time",
+          "shortDisplayName": "Q2 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q2",
+          "value": 0.0,
+          "displayValue": "0.000"
+         },
+         {
+          "name": "qual3TimeMS",
+          "displayName": "Q3 Race Time",
+          "shortDisplayName": "Q3 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q3",
+          "value": 0.0,
+          "displayValue": "0.000"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    "status": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/5829/status?lang=en&region=us",
+     "period": 55,
+     "type": {
+      "id": "12",
+      "name": "STATUS_CLASSIFIED",
+      "state": "post",
+      "completed": true,
+      "description": "Classified",
+      "detail": "Classified",
+      "shortDetail": "Classified"
+     },
+     "displayValue": "Classified"
+    }
+   },
+   {
+    "keys": [
+     "$ref",
+     "athlete",
+     "id",
+     "order",
+     "startOrder",
+     "statistics",
+     "status",
+     "type",
+     "uid",
+     "vehicle",
+     "winner"
+    ],
+    "raw": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/868?lang=en&region=us",
+     "id": "868",
+     "uid": "s:2000~a:868",
+     "type": "athlete",
+     "order": 3,
+     "startOrder": 2,
+     "winner": false,
+     "vehicle": {
+      "number": "44",
+      "manufacturer": "Ferrari",
+      "teamColor": "DC0000"
+     }
+    },
+    "statistics": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/868/statistics/0?lang=en&region=us",
+     "competition": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650?lang=en&region=us"
+     },
+     "splits": {
+      "id": "0",
+      "name": "All Splits",
+      "abbreviation": "TOT",
+      "type": "total",
+      "categories": [
+       {
+        "name": "general",
+        "displayName": "General",
+        "shortDisplayName": "General",
+        "abbreviation": "gen",
+        "summary": "",
+        "stats": [
+         {
+          "name": "lapsCompleted",
+          "displayName": "Laps Completed",
+          "shortDisplayName": "Laps Completed",
+          "description": "Total laps completed in the race",
+          "abbreviation": "LC",
+          "value": 55.0,
+          "displayValue": "55"
+         },
+         {
+          "name": "behindTime",
+          "displayName": "Time Behind",
+          "shortDisplayName": "Time Behind",
+          "description": "Total time behind the field in the race",
+          "abbreviation": "TB",
+          "value": 4919.0,
+          "displayValue": "+4.919"
+         },
+         {
+          "name": "championshipPts",
+          "displayName": "Championship Points",
+          "shortDisplayName": "Championship Points",
+          "description": "Championship points earned for the race",
+          "abbreviation": "CP",
+          "value": 15.0,
+          "displayValue": "15"
+         },
+         {
+          "name": "bonus",
+          "displayName": "Bonus Points",
+          "shortDisplayName": "Bonus",
+          "description": "Bonus points earned for the race",
+          "abbreviation": "B",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "penaltyPts",
+          "displayName": "Penalty Points",
+          "shortDisplayName": "Penalty Points",
+          "description": "Penalty points earned for the race",
+          "abbreviation": "PP",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "pitsTaken",
+          "displayName": "Pits Taken",
+          "shortDisplayName": "Pits Taken",
+          "description": "Pits Taken",
+          "abbreviation": "PT",
+          "value": 2.0,
+          "displayValue": "2"
+         },
+         {
+          "name": "place",
+          "displayName": "Place",
+          "shortDisplayName": "Place",
+          "description": "Place",
+          "abbreviation": "P",
+          "value": 3.0,
+          "displayValue": "3"
+         },
+         {
+          "name": "wins",
+          "displayName": "Wins",
+          "shortDisplayName": "Wins",
+          "description": "Wins",
+          "abbreviation": "WINS",
+          "value": 0.0,
+          "displayValue": "0"
+         },
+         {
+          "name": "pole",
+          "displayName": "Pole",
+          "shortDisplayName": "Pole",
+          "description": "Pole",
+          "abbreviation": "POLE",
+          "value": 2.0,
+          "displayValue": "2"
+         },
+         {
+          "name": "top5",
+          "displayName": "Top 5",
+          "shortDisplayName": "Top 5",
+          "description": "Top 5",
+          "abbreviation": "T5",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "top10",
+          "displayName": "Top 10",
+          "shortDisplayName": "Top 10",
+          "description": "Top 10",
+          "abbreviation": "T10",
+          "value": 1.0,
+          "displayValue": "1"
+         },
+         {
+          "name": "totalTime",
+          "displayName": "Total Race Time",
+          "shortDisplayName": "Total Race Time",
+          "description": "Total Race Time",
+          "abbreviation": "TOT",
+          "value": 6439727.0,
+          "displayValue": "1:47:19.727"
+         },
+         {
+          "name": "qual1TimeMS",
+          "displayName": "Q1 Race Time",
+          "shortDisplayName": "Q1 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q1",
+          "value": 0.0,
+          "displayValue": "0.000"
+         },
+         {
+          "name": "qual2TimeMS",
+          "displayName": "Q2 Race Time",
+          "shortDisplayName": "Q2 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q2",
+          "value": 0.0,
+          "displayValue": "0.000"
+         },
+         {
+          "name": "qual3TimeMS",
+          "displayName": "Q3 Race Time",
+          "shortDisplayName": "Q3 Race Time",
+          "description": "Time for the first qualifying run",
+          "abbreviation": "Q3",
+          "value": 0.0,
+          "displayValue": "0.000"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    "status": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/racing/leagues/f1/events/600060990/competitions/401901650/competitors/868/status?lang=en&region=us",
+     "period": 55,
+     "type": {
+      "id": "12",
+      "name": "STATUS_CLASSIFIED",
+      "state": "post",
+      "completed": true,
+      "description": "Classified",
+      "detail": "Classified",
+      "shortDetail": "Classified"
+     },
+     "displayValue": "Classified"
+    }
+   }
+  ]
+ },
+ "errors": []
+}
