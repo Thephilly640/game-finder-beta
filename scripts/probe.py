@@ -1,30 +1,36 @@
 #!/usr/bin/env python3
-"""One-off look at what ESPN gives for finishing gaps in NASCAR and F1. Writes probe.json."""
-import json, os, sys
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import update as u
-from datetime import datetime, timedelta
+"""One-off look at NASCAR's own feeds for finishing gaps. Writes probe.json."""
+import json, os, urllib.request
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+def get(url):
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.load(r)
+    except Exception as e:
+        return {"_error": str(e)[:200]}
 out = {}
-today = datetime.now(u.ET).date()
-rng = f"{today - timedelta(days=5):%Y%m%d}-{today:%Y%m%d}"
-for slug in ("nascar-premier", "f1"):
-    lst = u.get(u.RC + f"{slug}/events?dates={rng}&limit=20")
-    for it in (lst or {}).get("items", [])[:2]:
-        ev = u.get(u.ref(it)) or {}
-        comps = ev.get("competitions") or []
-        comp = next((c for c in comps if (c.get("type") or {}).get("abbreviation") == "Race"), None) or (comps[0] if comps else {})
-        cc = comp.get("competitors")
-        items = cc if isinstance(cc, list) and cc else ((u.get(u.ref(cc)) or {}).get("items", []) if u.ref(cc) else [])
-        items = sorted([c for c in items if c.get("order")], key=lambda c: c["order"])[:3]
-        rec = {"name": ev.get("name"), "comp_keys": sorted(comp.keys()), "competitors_inline": isinstance(cc, list), "rows": []}
-        for c in items:
-            row = {"keys": sorted(c.keys()), "raw": {k: v for k, v in c.items() if not isinstance(v, dict) or "$ref" not in v}}
-            for k in ("statistics", "linescores", "status", "score"):
-                if u.ref(c.get(k)):
-                    row[k] = u.get(u.ref(c[k]))
-            rec["rows"].append(row)
-        out[slug + ":" + str(ev.get("id"))] = rec
-out["errors"] = u.ERRORS[:10]
-s = json.dumps(out, ensure_ascii=False, indent=1)
-open(os.path.join(u.ROOT, "probe.json"), "w").write(s[:150000])
-print(len(s))
+for series in (1, 2, 3):
+    rl = get(f"https://cf.nascar.com/cacher/2026/{series}/race_list_basic.json")
+    out[f"race_list_{series}"] = (rl if isinstance(rl, dict) else {"n": len(rl)})
+    races = rl if isinstance(rl, list) else []
+    done = [r for r in races if (r.get("winner_driver_id") or r.get("winner_driver_name"))]
+    out[f"race_list_{series}_sample"] = races[:1]
+    out[f"race_list_{series}_count"] = len(races)
+    if not done:
+        continue
+    r = done[-1]
+    rid = r.get("race_id")
+    out[f"last_{series}"] = r
+    wf = get(f"https://cf.nascar.com/cacher/2026/{series}/{rid}/weekend-feed.json")
+    s = json.dumps(wf)
+    out[f"weekend_{series}_len"] = len(s)
+    wr = (wf.get("weekend_race") or [{}])[0] if isinstance(wf, dict) else {}
+    out[f"weekend_{series}_keys"] = sorted(wr.keys()) if isinstance(wr, dict) else str(type(wr))
+    res = wr.get("results") if isinstance(wr, dict) else None
+    out[f"weekend_{series}_results_first3"] = (res or [])[:3]
+    lf = get(f"https://cf.nascar.com/live/feeds/series_{series}/{rid}/live_feed.json")
+    out[f"live_{series}_keys"] = sorted(lf.keys()) if isinstance(lf, dict) else str(type(lf))
+    out[f"live_{series}_vehicles_first3"] = (lf.get("vehicles") or [])[:3] if isinstance(lf, dict) else None
+    out[f"live_{series}_error"] = lf.get("_error") if isinstance(lf, dict) else None
+open(os.path.join(ROOT, "probe.json"), "w").write(json.dumps(out, ensure_ascii=False, indent=1)[:200000])
