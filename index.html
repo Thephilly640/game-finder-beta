@@ -3,7 +3,7 @@
 <title>Game Finder Beta</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#14181a">
+<meta name="theme-color" content="#17100b">
 <link rel="manifest" href="manifest.json?v=4">
 <link rel="apple-touch-icon" href="icon-180.png">
 <meta name="apple-mobile-web-app-title" content="GF Beta">
@@ -12,22 +12,22 @@
 <style>
 /* Layout: one-screen phone app — sticky header (title, search, series chips), scrolling day-grouped game list */
 :root{
-  --past:#d3d9d5;--pastfg:#4a534e;
-  --bg:#eef1ef;--card:#ffffff;--fg:#161a18;--muted:#5b6560;--line:#d9dfdb;--field:#ffffff;
-  --accent:#c8281c;--star:#d99a0b;--live:#c72e2e;
-  --golf:#6a42a8;--nascar:#c9361f;--f1:#1d5fb8;--nfl:#1f6f4a;--ncaa:#8a5a12;
+  --past:#e6d9c6;--pastfg:#6b5644;
+  --bg:#f6eee1;--card:#fffaf2;--fg:#2a1b12;--muted:#7a6454;--line:#e2d2bb;--field:#fffaf2;
+  --accent:#c2410c;--star:#d9930b;--live:#c72e2e;--glow:.16;
+  --golf:#6a42a8;--nascar:#b3321d;--f1:#1d5fb8;--nfl:#4a6b2a;--ncaa:#a0600f;
   --display:"Barlow Condensed","Arial Narrow",sans-serif;--body:"Barlow",system-ui,-apple-system,sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#121615;--card:#1b201e;--fg:#e9eeeb;--muted:#99a39e;--line:#2b322f;--field:#232927;
-  --accent:#ff6a55;--star:#f2c14e;--live:#ff6b6b;
-  --past:#0d100f;--pastfg:#8a948f;
-  --golf:#b794f0;--nascar:#ff7a63;--f1:#78aef5;--nfl:#6fd09c;--ncaa:#e6b25f;color-scheme:dark}}
+  --bg:#17100b;--card:#231812;--fg:#f4e7d4;--muted:#b9a38f;--line:#3a2a1e;--field:#2c1f16;
+  --accent:#ff8a3d;--star:#f5b942;--live:#ff6b6b;--glow:.34;
+  --past:#100a07;--pastfg:#9a8775;
+  --golf:#c9a0e8;--nascar:#ff8566;--f1:#78aef5;--nfl:#9bcf6a;--ncaa:#e8b45c;color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#121615;--card:#1b201e;--fg:#e9eeeb;--muted:#99a39e;--line:#2b322f;--field:#232927;
-  --accent:#ff6a55;--star:#f2c14e;--live:#ff6b6b;
-  --past:#0d100f;--pastfg:#8a948f;
-  --golf:#b794f0;--nascar:#ff7a63;--f1:#78aef5;--nfl:#6fd09c;--ncaa:#e6b25f;color-scheme:dark}
+  --bg:#17100b;--card:#231812;--fg:#f4e7d4;--muted:#b9a38f;--line:#3a2a1e;--field:#2c1f16;
+  --accent:#ff8a3d;--star:#f5b942;--live:#ff6b6b;--glow:.34;
+  --past:#100a07;--pastfg:#9a8775;
+  --golf:#c9a0e8;--nascar:#ff8566;--f1:#78aef5;--nfl:#9bcf6a;--ncaa:#e8b45c;color-scheme:dark}
 html,body{height:100%}
 body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.35;-webkit-tap-highlight-color:transparent}
 .app{max-width:560px;margin:0 auto}
@@ -173,44 +173,71 @@ main{padding-inline:16px;padding-block:6px 40px}
 .credit{color:var(--muted);font-size:.65rem;text-align:center;margin:18px 0 6px;opacity:.8}
 .foot{color:var(--muted);font-size:.8rem;margin-top:28px;line-height:1.5}
 .pastbtn{display:block;margin:14px auto 0;font:600 .85rem var(--body);background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:8px 14px;cursor:pointer}
-/* Camping scene: fixed behind everything, tinted from the theme colors so it works in light and dark */
-.camp{position:fixed;left:0;right:0;bottom:0;width:100%;height:38vh;z-index:-1;pointer-events:none}
+/* Campfire scene: fixed behind everything; fall colors */
+body{background-image:radial-gradient(ellipse 120% 55% at 50% 100%,color-mix(in srgb,var(--accent) 16%,transparent),transparent 70%);background-attachment:fixed;background-repeat:no-repeat}
+.camp{position:fixed;left:0;right:0;bottom:0;width:100%;height:44vh;z-index:-1;pointer-events:none}
+.camp .fl path,.camp .sp,.camp .lf{transform-box:fill-box;transform-origin:50% 100%}
+.camp .fl path{animation:flick 1.3s ease-in-out infinite alternate}
+.camp .fl2{animation-duration:.9s!important}.camp .fl3{animation-duration:.7s!important}
+.camp .sp{animation:spark 4s ease-out infinite;opacity:0}
+.camp .lf{animation:leaf 18s linear infinite;opacity:0}
+@keyframes flick{from{transform:scale(1,.94) skewX(-2deg)}to{transform:scale(.95,1.08) skewX(2deg)}}
+@keyframes spark{0%{transform:translate(0,0);opacity:0}15%{opacity:.9}100%{transform:translate(8px,-60px);opacity:0}}
+@keyframes leaf{0%{transform:translate(var(--x),-10px) rotate(0);opacity:0}10%{opacity:.9}90%{opacity:.9}100%{transform:translate(calc(var(--x) + 50px),280px) rotate(260deg);opacity:0}}
+@media (prefers-reduced-motion:reduce){.camp .fl path,.camp .sp,.camp .lf{animation:none}.camp .sp,.camp .lf{opacity:0}}
 </style>
 </head><body>
 <svg class="camp" viewBox="0 0 400 300" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false">
   <defs>
+    <radialGradient id="cg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff9a2e" stop-opacity="1"/><stop offset=".5" stop-color="#ff7a1a" stop-opacity=".45"/><stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/></radialGradient>
+    <g id="tree"><rect x="-2.5" y="-14" width="5" height="16" fill="#6b4226"/><circle cx="0" cy="-30" r="15" fill="currentColor"/><circle cx="-11" cy="-21" r="10" fill="currentColor"/><circle cx="11" cy="-21" r="10" fill="currentColor"/></g>
     <g id="pine"><path d="M0-62 L14-32 H6 L19-6 H-19 L-6-32 H-14Z"/><rect x="-3" y="-6" width="6" height="9"/></g>
+    <path id="leaf" d="M0 0 C4-4 8-2 9 3 C5 6 1 5 0 0Z"/>
   </defs>
-  <g fill="var(--star)">
-    <circle cx="322" cy="40" r="15" opacity=".35"/>
-    <circle cx="60" cy="40" r="1.6" opacity=".5"/><circle cx="130" cy="78" r="1.2" opacity=".45"/>
-    <circle cx="205" cy="34" r="1.8" opacity=".5"/><circle cx="262" cy="92" r="1.2" opacity=".4"/>
-    <circle cx="372" cy="118" r="1.5" opacity=".45"/><circle cx="24" cy="112" r="1.3" opacity=".4"/>
+  <circle cx="330" cy="38" r="14" fill="var(--star)" opacity=".28"/>
+  <g fill="var(--star)" opacity=".5">
+    <circle cx="58" cy="36" r="1.5"/><circle cx="128" cy="70" r="1.2"/><circle cx="205" cy="28" r="1.7"/><circle cx="270" cy="84" r="1.2"/><circle cx="378" cy="108" r="1.4"/><circle cx="22" cy="104" r="1.2"/>
   </g>
-  <g fill="var(--nfl)">
-    <path d="M0 215 L62 150 L110 200 L170 128 L240 205 L300 160 L400 225 V300 H0Z" opacity=".10"/>
-    <path d="M0 245 Q80 205 160 240 T320 232 T400 244 V300 H0Z" opacity=".16"/>
-    <rect x="0" y="262" width="400" height="38" opacity=".20"/>
-    <g opacity=".24">
-      <use href="#pine" transform="translate(22 268) scale(1.5)"/>
-      <use href="#pine" transform="translate(62 266) scale(1.1)"/>
-      <use href="#pine" transform="translate(96 268) scale(1.3)"/>
-      <use href="#pine" transform="translate(338 267) scale(1.2)"/>
-      <use href="#pine" transform="translate(372 268) scale(1.6)"/>
-    </g>
+  <g fill="#8a4b2a">
+    <path d="M0 212 L62 150 L112 196 L172 132 L240 202 L300 158 L400 222 V300 H0Z" opacity=".12"/>
+    <path d="M0 242 Q80 204 160 238 T320 230 T400 242 V300 H0Z" opacity=".2"/>
+    <rect x="0" y="262" width="400" height="38" fill="#5a3a22" opacity=".3"/>
   </g>
-  <g fill="var(--accent)" opacity=".26">
-    <path d="M118 268 L156 214 L194 268Z"/>
-    <path d="M278 268 L304 230 L330 268Z"/>
+  <g fill="#3d5a2a" opacity=".3">
+    <use href="#pine" transform="translate(150 244) scale(.8)"/>
+    <use href="#pine" transform="translate(252 246) scale(.9)"/>
   </g>
-  <g fill="var(--bg)" opacity=".55">
-    <path d="M156 214 L143 268 H169Z"/>
-    <path d="M304 230 L295 268 H313Z"/>
+  <g opacity=".5">
+    <use href="#tree" transform="translate(24 266) scale(1.5)" style="color:#d9631e"/>
+    <use href="#tree" transform="translate(66 264) scale(1.1)" style="color:#b8321f"/>
+    <use href="#tree" transform="translate(98 266) scale(1.3)" style="color:#e0a41b"/>
+    <use href="#tree" transform="translate(336 265) scale(1.2)" style="color:#e0a41b"/>
+    <use href="#tree" transform="translate(372 266) scale(1.6)" style="color:#c2410c"/>
   </g>
-  <g>
-    <circle cx="230" cy="256" r="22" fill="var(--star)" opacity=".13"/>
-    <path d="M214 270 L246 262 M214 262 L246 270" stroke="var(--muted)" stroke-width="4" stroke-linecap="round" opacity=".45"/>
-    <path d="M230 236 C238 246 240 252 236 260 C234 256 232 254 230 256 C228 254 226 256 224 260 C220 252 224 244 230 236Z" fill="var(--star)" opacity=".6"/>
+  <g fill="#c2410c" opacity=".3">
+    <path d="M108 268 L136 226 L164 268Z"/>
+    <path d="M250 268 L272 236 L294 268Z"/>
+  </g>
+  <g fill="var(--bg)" opacity=".5"><path d="M136 226 L127 268 H145Z"/><path d="M272 236 L265 268 H279Z"/></g>
+  <ellipse cx="200" cy="248" rx="75" ry="55" fill="url(#cg)" opacity="var(--glow)"/>
+  <g stroke="#5a3a22" stroke-width="6" stroke-linecap="round" opacity=".8"><path d="M176 268 L222 258"/><path d="M178 258 L224 268"/></g>
+  <g fill="#7a6a5c" opacity=".55"><ellipse cx="166" cy="270" rx="7" ry="4"/><ellipse cx="180" cy="274" rx="7" ry="4"/><ellipse cx="200" cy="276" rx="8" ry="4"/><ellipse cx="220" cy="274" rx="7" ry="4"/><ellipse cx="234" cy="270" rx="7" ry="4"/></g>
+  <g class="fl" opacity=".9">
+    <path d="M200 214 C214 232 222 244 216 260 C213 254 209 252 205 256 C203 252 197 252 195 256 C191 252 187 254 184 260 C178 244 188 230 200 214Z" fill="#ff6a1a"/>
+    <path class="fl2" d="M200 230 C209 242 212 250 208 260 C205 256 202 255 200 258 C198 255 195 256 192 260 C188 250 192 240 200 230Z" fill="#ffa22e"/>
+    <path class="fl3" d="M200 244 C205 250 206 255 203 260 C201 258 199 258 197 260 C194 255 195 250 200 244Z" fill="#ffd36b"/>
+  </g>
+  <g fill="#ffb347">
+    <circle class="sp" cx="196" cy="226" r="1.6" style="animation-delay:0s"/>
+    <circle class="sp" cx="206" cy="222" r="1.3" style="animation-delay:1.1s"/>
+    <circle class="sp" cx="201" cy="230" r="1.5" style="animation-delay:2.3s"/>
+    <circle class="sp" cx="210" cy="228" r="1.1" style="animation-delay:3.2s"/>
+  </g>
+  <g opacity=".6">
+    <use class="lf" href="#leaf" fill="#d9631e" style="animation-delay:0s;--x:40px"/>
+    <use class="lf" href="#leaf" fill="#e0a41b" style="animation-delay:-5s;--x:140px"/>
+    <use class="lf" href="#leaf" fill="#b8321f" style="animation-delay:-9s;--x:250px"/>
+    <use class="lf" href="#leaf" fill="#c2410c" style="animation-delay:-13s;--x:330px"/>
   </g>
 </svg>
 <div class="app">
@@ -754,7 +781,7 @@ document.addEventListener("visibilitychange",()=>{if(!document.hidden){loadLive(
   const root=document.documentElement,b=$("theme"),mq=matchMedia("(prefers-color-scheme: dark)");
   const cur=()=>root.dataset.theme||(mq.matches?"dark":"light");
   const paint=()=>{const d=cur()==="dark";b.textContent=d?"☀":"☾";b.setAttribute("aria-label",d?"Switch to normal mode":"Switch to dark mode");
-    const m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d?"#121615":"#eef1ef"};
+    const m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d?"#17100b":"#f6eee1"};
   try{const t=localStorage.getItem("gf2_theme");if(t==="dark"||t==="light")root.dataset.theme=t}catch(e){}
   b.addEventListener("click",()=>{const n=cur()==="dark"?"light":"dark";root.dataset.theme=n;try{localStorage.setItem("gf2_theme",n)}catch(e){}paint()});
   paint();
