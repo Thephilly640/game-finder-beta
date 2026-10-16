@@ -173,8 +173,46 @@ main{padding-inline:16px;padding-block:6px 40px}
 .credit{color:var(--muted);font-size:.65rem;text-align:center;margin:18px 0 6px;opacity:.8}
 .foot{color:var(--muted);font-size:.8rem;margin-top:28px;line-height:1.5}
 .pastbtn{display:block;margin:14px auto 0;font:600 .85rem var(--body);background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:8px 14px;cursor:pointer}
+/* Camping scene: fixed behind everything, tinted from the theme colors so it works in light and dark */
+.camp{position:fixed;left:0;right:0;bottom:0;width:100%;height:38vh;z-index:-1;pointer-events:none}
 </style>
 </head><body>
+<svg class="camp" viewBox="0 0 400 300" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false">
+  <defs>
+    <g id="pine"><path d="M0-62 L14-32 H6 L19-6 H-19 L-6-32 H-14Z"/><rect x="-3" y="-6" width="6" height="9"/></g>
+  </defs>
+  <g fill="var(--star)">
+    <circle cx="322" cy="40" r="15" opacity=".35"/>
+    <circle cx="60" cy="40" r="1.6" opacity=".5"/><circle cx="130" cy="78" r="1.2" opacity=".45"/>
+    <circle cx="205" cy="34" r="1.8" opacity=".5"/><circle cx="262" cy="92" r="1.2" opacity=".4"/>
+    <circle cx="372" cy="118" r="1.5" opacity=".45"/><circle cx="24" cy="112" r="1.3" opacity=".4"/>
+  </g>
+  <g fill="var(--nfl)">
+    <path d="M0 215 L62 150 L110 200 L170 128 L240 205 L300 160 L400 225 V300 H0Z" opacity=".10"/>
+    <path d="M0 245 Q80 205 160 240 T320 232 T400 244 V300 H0Z" opacity=".16"/>
+    <rect x="0" y="262" width="400" height="38" opacity=".20"/>
+    <g opacity=".24">
+      <use href="#pine" transform="translate(22 268) scale(1.5)"/>
+      <use href="#pine" transform="translate(62 266) scale(1.1)"/>
+      <use href="#pine" transform="translate(96 268) scale(1.3)"/>
+      <use href="#pine" transform="translate(338 267) scale(1.2)"/>
+      <use href="#pine" transform="translate(372 268) scale(1.6)"/>
+    </g>
+  </g>
+  <g fill="var(--accent)" opacity=".26">
+    <path d="M118 268 L156 214 L194 268Z"/>
+    <path d="M278 268 L304 230 L330 268Z"/>
+  </g>
+  <g fill="var(--bg)" opacity=".55">
+    <path d="M156 214 L143 268 H169Z"/>
+    <path d="M304 230 L295 268 H313Z"/>
+  </g>
+  <g>
+    <circle cx="230" cy="256" r="22" fill="var(--star)" opacity=".13"/>
+    <path d="M214 270 L246 262 M214 262 L246 270" stroke="var(--muted)" stroke-width="4" stroke-linecap="round" opacity=".45"/>
+    <path d="M230 236 C238 246 240 252 236 260 C234 256 232 254 230 256 C228 254 226 256 224 260 C220 252 224 244 230 236Z" fill="var(--star)" opacity=".6"/>
+  </g>
+</svg>
 <div class="app">
   <header>
     <div class="top"><div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#14181a"/><g transform="translate(8 10)"><path d="M0 4h44v24H0z" fill="#f5f5f0"/><path d="M0 4h11v8H0zM22 4h11v8H22zM11 12h11v8H11zM33 12h11v8H33zM0 20h11v8H0zM22 20h11v8H22z" fill="#14181a"/></g><ellipse cx="34" cy="40" rx="20" ry="11" transform="rotate(-18 34 40)" fill="#8b4a1f"/><path d="M26 40h16" stroke="#f5f5f0" stroke-width="2" transform="rotate(-18 34 40)"/><path d="M4 44h16M6 50h12M10 56h8" stroke="#e0352a" stroke-width="3" stroke-linecap="round"/></svg><h1>Game Finder <span class="v2b">BETA</span></h1></div><span class="count" id="count"></span></div>
