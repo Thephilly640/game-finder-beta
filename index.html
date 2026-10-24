@@ -324,14 +324,18 @@ try{if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").ca
   try{
     const standalone=matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
     const box=document.getElementById("inst"),btn=document.getElementById("inst-btn"),help=document.getElementById("inst-help");
-    if(!box||standalone)return;
+    const KEY="gf-installed";
+    const had=()=>{try{return localStorage.getItem(KEY)==="1"}catch(e){return false}};
+    const mark=()=>{try{localStorage.setItem(KEY,"1")}catch(e){}};
+    if(standalone)mark();
+    if(!box||standalone||had())return;
     let ev=null;
     const ios=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
     box.hidden=false;
     addEventListener("beforeinstallprompt",e=>{e.preventDefault();ev=e;});
-    addEventListener("appinstalled",()=>{box.hidden=true;});
+    addEventListener("appinstalled",()=>{mark();box.hidden=true;});
     btn.addEventListener("click",async()=>{
-      if(ev){ev.prompt();try{await ev.userChoice}catch(e){}ev=null;return}
+      if(ev){ev.prompt();try{const c=await ev.userChoice;if(c&&c.outcome==="accepted"){mark();box.hidden=true}}catch(e){}ev=null;return}
       help.hidden=false;
       help.textContent=ios
         ?" On iPhone or iPad: open this page in Safari, tap the Share button, then tap Add to Home Screen."
