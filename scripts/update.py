@@ -471,7 +471,7 @@ def main():
 
     sched = old.get("sched", [])
     sched_at = old.get("schedAt", "")
-    if older("schedAt", 2.9) or "nba" not in old.get("schedLg", []):  # also runs once to pick up a newly added league
+    if older("schedAt", 2.9) or "nba2" not in old.get("schedLg", []):  # also runs once to pick up a newly added league
         base_rows = G
         new = []
         new += sync_football("nfl", "nfl", 100, names, base_rows)
@@ -542,7 +542,7 @@ def main():
         ERRORS.append("golf: " + repr(e)[:80])
         golf = old.get("golf", [])
 
-    data = dict(updated=stamp(), schedAt=sched_at, schedLg=["nba"], sched=sched, finals=finals, spreads=spreads, R=R, races=races, golf=golf,
+    data = dict(updated=stamp(), schedAt=sched_at, schedLg=["nba2"], sched=sched, finals=finals, spreads=spreads, R=R, races=races, golf=golf,
                 stats=dict(events=len(evs), matched=len(matched), finals=len(finals), spreads=len(spreads), sched=len(sched),
                            races=len(races), golf=len(golf), poll=poll), errors=ERRORS[:12])
     json.dump(names, open(npath, "w"), ensure_ascii=False, sort_keys=True, separators=(",", ":"))
