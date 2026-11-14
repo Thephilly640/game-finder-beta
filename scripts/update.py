@@ -25,6 +25,7 @@ ALIAS = {"Massachusetts": "UMass", "Connecticut": "UConn", "Hawai'i": "Hawaii", 
 NET = {"USA Net": "USA Network", "CBSSN": "CBS Sports Network", "FS1": "FS1", "BTN": "Big Ten Network",
        "SECN": "SEC Network", "ACCN": "ACC Network", "truTV": "TNT / truTV", "TNT": "TNT / truTV", "NFLN": "NFL Network",
        "NFL Net": "NFL Network", "Prime": "Prime Video", "CW": "The CW"}
+NBA_NATIONAL = {"ABC", "ESPN", "ESPN2", "NBC", "NBC / Peacock", "Peacock", "NBCSN", "NBCSN / NBC", "NBA TV", "Prime Video"}
 ERRORS = []
 _cache = {}
 
@@ -86,6 +87,8 @@ def network(comp, lg=""):
         n = NET.get(n, n)
         if n and n not in names:
             names.append(n)
+    if lg == "nba":  # ESPN also lists every team's local stream (Bucks App, DAZN, ClipperVision...): show national channels only
+        names = [n for n in names if n in NBA_NATIONAL]
     s = " / ".join(names)
     if lg in ("nfl", "nba") and s == "NBC":
         s = "NBC / Peacock"
